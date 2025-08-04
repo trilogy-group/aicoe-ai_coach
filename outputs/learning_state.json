@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-08-04T18:59:41.017737",
+  "confidence_threshold": 0.8999999999999999,
+  "persona_adaptations": {
+    "language_styles": {},
+    "specialized_templates": {
+      "analyst": {
+        "excel_shortcuts": [
+          "Try Ctrl+Arrow keys to navigate data regions faster - could save ~30 seconds per task",
+          "Want to try Excel pivot table shortcuts? Alt+N+V creates tables 50% faster",
+          "Consider using Ctrl+Shift+L for instant filters - saves ~2 minutes per dataset"
+        ],
+        "powerbi_optimization": [
+          "Try creating PowerBI templates now - could save 5+ hours next week",
+          "Want to try DAX shortcuts? CALCULATE functions could speed up your reports by 40%",
+          "Consider setting up automatic data refresh - eliminates manual updates"
+        ],
+        "data_focus": [
+          "Perfect time for deep data analysis - your environment looks optimized",
+          "Want to block 90 minutes for report creation? Your focus patterns show this is your peak time"
+        ]
+      }
+    },
+    "timing_rules": {
+      "developer": {
+        "min_interval_minutes": 45,
+        "flow_state_detection": true,
+        "context_awareness": true,
+        "quiet_hours": [
+          9,
+          11,
+          14,
+          16
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "timestamp": "2025-08-04T19:04:48.025344",
+  "confidence_threshold": 0.8,
+  "persona_intelligence": {
+    "manager": {
+      "language_style": "consultative",
+      "prefixes": [
+        "When you have a moment, consider",
+        "At your convenience, you might",
+        "If it helps, you could try",
+        "You might find it useful to"
+      ],
+      "avoid_words": [
+        "Want to try",
+        "You should",
+        "Need to"
+      ],
+      "confidence_override": 0.85,
+      "nudge_interval_minutes": 60,
+      "optimal_hours": [
+        9,
+        10,
+        14,
+        15
+      ],
+      "common_dismissal_reasons": [
+        "busy",
+        "in_meeting"
+      ]
+    },
+    "analyst": {
+      "language_style": "technical_helpful",
+      "excel_shortcuts": [
+        "Try Ctrl+Arrow keys to navigate data regions - saves ~30 seconds per task",
+        "Use Alt+Tab to switch between Excel sheets - saves 15+ clicks per hour",
+        "Consider Ctrl+Shift+L for instant filters - saves ~2 minutes per dataset"
+      ],
+      "powerbi_templates": [
+        "Create PowerBI templates now - could save 5+ hours next week",
+        "Try DAX shortcuts with CALCULATE functions - speeds up reports by 40%",
+        "Set up automatic data refresh - eliminates manual updates"
+      ],
+      "confidence_override": 0.6,
+      "nudge_interval_minutes": 30,
+      "specialization_triggers": [
+        "Excel",
+        "PowerBI",
+        "data",
+        "analysis"
+      ],
+      "high_acceptance_rate": 0.875
+    },
+    "developer": {
+      "language_style": "technical_direct",
+      "vscode_optimizations": [
+        "Group VSCode tabs into workspaces - cuts context switching by 50%",
+        "Use Cmd+Shift+P for quick commands - saves navigation time",
+        "Try workspace-specific settings - improves focus by 30%"
+      ],
+      "confidence_override": 0.75,
+      "nudge_interval_minutes": 45,
+      "quiet_hours": [
+        9,
+        10,
+        11,
+        14,
+        15,
+        16
+      ],
+      "flow_state_protection": true,
+      "common_dismissal_reasons": [
+        "too_frequent",
+        "in_flow"
+      ]
+    },
+    "designer": {
+      "language_style": "creative_supportive",
+      "confidence_override": 0.7,
+      "nudge_interval_minutes": 35,
+      "high_acceptance_rate": 1.0
+    }
+  },
+  "learning_metrics": {
+    "total_interactions": 0,
+    "acceptance_rate": 0.0,
+    "avg_effectiveness": 0.0,
+    "persona_performance": {}
+  },
+  "total_interactions": 0
+}
