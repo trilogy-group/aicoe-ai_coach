@@ -8,3 +8,4 @@ backups/
 outputs/*.csv
 outputs/*.json
 outputs/*.jsonl
+outputs/logs/
