@@ -1,652 +1,652 @@
 [
   {
     "user_id": 1,
-    "persona_type": "developer",
-    "productivity_baseline": 0.8162022854107468,
-    "focus_tendency": 0.9149278687981126,
-    "interruption_tolerance": 0.7370328029027959,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.739712181902581,
+    "focus_tendency": 0.1218684421470429,
+    "interruption_tolerance": 0.5011065030595869,
     "tool_proficiency": {
-      "VSCode": 0.5894448545636757,
-      "Terminal": 0.7168137403490317,
-      "Chrome": 0.4442549693274436,
-      "Slack": 0.6995825233889047
+      "Excel": 0.41908918401898493,
+      "PowerBI": 0.6538054707890668,
+      "SQL Server": 0.6232887374903283,
+      "Tableau": 0.3338361945133472
+    },
+    "work_schedule": {
+      "start_hour": "9",
+      "end_hour": "18",
+      "chronotype": "afternoon_person",
+      "break_frequency": 0.989500363068973
+    },
+    "behavioral_patterns": {
+      "multitasking_tendency": 0.1936882603983511,
+      "notification_tolerance": 0.46606068672991,
+      "collaboration_frequency": 0.22943842002063078,
+      "learning_orientation": 0.22302208147590905,
+      "efficiency_consciousness": 0.9267193992300126
+    }
+  },
+  {
+    "user_id": 2,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.9143895133641944,
+    "focus_tendency": 0.49254200537987813,
+    "interruption_tolerance": 0.4080490312354785,
+    "tool_proficiency": {
+      "Zendesk": 0.9816831396697064,
+      "Intercom": 0.9382826915220884,
+      "Claude": 0.7838944420627385,
+      "Slack": 0.6927327448951712
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "17",
       "chronotype": "afternoon_person",
-      "break_frequency": 0.957460020058568
+      "break_frequency": 0.7323042638424528
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.09149871918603918,
-      "notification_tolerance": 0.5164211674441719,
-      "collaboration_frequency": 0.24592429464192472,
-      "learning_orientation": 0.6787503594205565,
-      "efficiency_consciousness": 0.7895923834166216
-    }
-  },
-  {
-    "user_id": 2,
-    "persona_type": "analyst",
-    "productivity_baseline": 0.7535940733654718,
-    "focus_tendency": 0.700695859744223,
-    "interruption_tolerance": 0.5427499304138126,
-    "tool_proficiency": {
-      "Excel": 0.3121878245285243,
-      "PowerBI": 0.6521665855220375,
-      "SQL Server": 0.6393584490484003,
-      "Tableau": 0.3842044790807089
-    },
-    "work_schedule": {
-      "start_hour": "7",
-      "end_hour": "17",
-      "chronotype": "consistent",
-      "break_frequency": 1.2786998811919812
-    },
-    "behavioral_patterns": {
-      "multitasking_tendency": 0.209519535061361,
-      "notification_tolerance": 0.6527566877372413,
-      "collaboration_frequency": 0.239362939461926,
-      "learning_orientation": 0.13950448214359598,
-      "efficiency_consciousness": 0.33937389648706373
+      "multitasking_tendency": 0.47284391058305114,
+      "notification_tolerance": 0.7047532067756456,
+      "collaboration_frequency": 0.12861213261030774,
+      "learning_orientation": 0.5175075508170432,
+      "efficiency_consciousness": 0.5609225408383847
     }
   },
   {
     "user_id": 3,
     "persona_type": "developer",
-    "productivity_baseline": 0.9172244705329389,
-    "focus_tendency": 0.4676759759274828,
-    "interruption_tolerance": 0.7684605497633783,
+    "productivity_baseline": 0.9329575473471031,
+    "focus_tendency": 0.5130071876526868,
+    "interruption_tolerance": 0.6857227698143705,
     "tool_proficiency": {
-      "VSCode": 0.6995542783209295,
-      "Terminal": 0.4926956994564607,
-      "Chrome": 0.8201934108010376,
-      "Slack": 0.44990233164722965
+      "VSCode": 0.5019387565895806,
+      "Terminal": 0.5010762798272456,
+      "Chrome": 0.6200355103254126,
+      "Slack": 0.5508406486753347
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "18",
       "chronotype": "afternoon_person",
-      "break_frequency": 0.9119175813953847
+      "break_frequency": 0.9758486384039201
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.466490664020947,
-      "notification_tolerance": 0.6311054751814575,
-      "collaboration_frequency": 0.1324571141345578,
-      "learning_orientation": 0.8148484361771705,
-      "efficiency_consciousness": 0.3358919255917396
+      "multitasking_tendency": 0.7315245725605909,
+      "notification_tolerance": 0.5393964271970688,
+      "collaboration_frequency": 0.44361064624066726,
+      "learning_orientation": 0.5896567595507927,
+      "efficiency_consciousness": 0.5092548067462773
     }
   },
   {
     "user_id": 4,
-    "persona_type": "customer_support",
-    "productivity_baseline": 0.8189349496136148,
-    "focus_tendency": 0.7866571308580039,
-    "interruption_tolerance": 0.5325144004125147,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.7045935530207423,
+    "focus_tendency": 0.6526397277113304,
+    "interruption_tolerance": 0.6080353914108156,
     "tool_proficiency": {
-      "Zendesk": 0.5126695829663819,
-      "Intercom": 0.6218644036426335,
-      "Claude": 0.7821610840606866,
-      "Slack": 0.2538328666178207
+      "Excel": 0.3397473040863175,
+      "PowerBI": 0.8025979003755245,
+      "SQL Server": 0.46603907109826354,
+      "Tableau": 0.69386849782623
     },
     "work_schedule": {
-      "start_hour": "8",
-      "end_hour": "17",
-      "chronotype": "morning_person",
-      "break_frequency": 1.0745811140230996
+      "start_hour": "7",
+      "end_hour": "18",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.2601418679450878
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.3741453741472882,
-      "notification_tolerance": 0.3040407697092151,
-      "collaboration_frequency": 0.05560603376401471,
-      "learning_orientation": 0.3282113327685706,
-      "efficiency_consciousness": 0.187992073762093
+      "multitasking_tendency": 0.7360114237720048,
+      "notification_tolerance": 0.6930916888788329,
+      "collaboration_frequency": 0.12848257118549763,
+      "learning_orientation": 0.6191314607062899,
+      "efficiency_consciousness": 0.9386969395364174
     }
   },
   {
     "user_id": 5,
-    "persona_type": "designer",
-    "productivity_baseline": 0.6225368535507255,
-    "focus_tendency": 0.6626424099656271,
-    "interruption_tolerance": 0.7589896889400158,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.7990150680074105,
+    "focus_tendency": 0.24904307815070273,
+    "interruption_tolerance": 0.39581877406588994,
     "tool_proficiency": {
-      "Figma": 0.5249047367205617,
-      "Photoshop": 0.5198906575257053,
-      "Illustrator": 0.6703642187752574,
-      "Chrome": 0.7292754853901018
+      "Zendesk": 0.8248554670303127,
+      "Intercom": 0.9051878469434403,
+      "Claude": 0.6413233155574389,
+      "Slack": 0.5158223875790016
     },
     "work_schedule": {
-      "start_hour": "7",
-      "end_hour": "18",
-      "chronotype": "afternoon_person",
-      "break_frequency": 1.106094120827397
+      "start_hour": "9",
+      "end_hour": "17",
+      "chronotype": "morning_person",
+      "break_frequency": 1.2284139566910726
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.6276556840397616,
-      "notification_tolerance": 0.8712200641232587,
-      "collaboration_frequency": 0.22277559239289485,
-      "learning_orientation": 0.19904302671721863,
-      "efficiency_consciousness": 0.9118805083244494
+      "multitasking_tendency": 0.30467281397097823,
+      "notification_tolerance": 0.4236060976898033,
+      "collaboration_frequency": 0.013813890084441227,
+      "learning_orientation": 0.49540744172010764,
+      "efficiency_consciousness": 0.6343410058657064
     }
   },
   {
     "user_id": 6,
-    "persona_type": "analyst",
-    "productivity_baseline": 0.6924958771766433,
-    "focus_tendency": 0.6161323612060742,
-    "interruption_tolerance": 0.6326646834121262,
+    "persona_type": "developer",
+    "productivity_baseline": 0.7711095180964562,
+    "focus_tendency": 0.9449679714709668,
+    "interruption_tolerance": 0.8505847744569491,
     "tool_proficiency": {
-      "Excel": 0.7012266181098448,
-      "PowerBI": 0.8421520221951904,
-      "SQL Server": 0.26352003059879425,
-      "Tableau": 0.50974234414685
+      "VSCode": 0.9364453476330744,
+      "Terminal": 0.684405386904029,
+      "Chrome": 0.5757478289007972,
+      "Slack": 0.7002993049728545
     },
     "work_schedule": {
-      "start_hour": "9",
-      "end_hour": "16",
-      "chronotype": "morning_person",
-      "break_frequency": 0.9287404483878885
+      "start_hour": "7",
+      "end_hour": "18",
+      "chronotype": "consistent",
+      "break_frequency": 1.219230812583678
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.0929078222143482,
-      "notification_tolerance": 0.5291694283950791,
-      "collaboration_frequency": 0.1425257287839901,
-      "learning_orientation": 0.7012020820674632,
-      "efficiency_consciousness": 0.39265026604538844
+      "multitasking_tendency": 0.5217293939855431,
+      "notification_tolerance": 0.3953408239906803,
+      "collaboration_frequency": 0.17452919344976073,
+      "learning_orientation": 0.5390463986962568,
+      "efficiency_consciousness": 0.6152902961350496
     }
   },
   {
     "user_id": 7,
-    "persona_type": "developer",
-    "productivity_baseline": 0.7917014642993271,
-    "focus_tendency": 0.23965659516058682,
-    "interruption_tolerance": 0.7547462791262298,
+    "persona_type": "designer",
+    "productivity_baseline": 0.6300690291300127,
+    "focus_tendency": 0.9029515386106532,
+    "interruption_tolerance": 0.6785767337952876,
     "tool_proficiency": {
-      "VSCode": 0.7990354825833514,
-      "Terminal": 0.8347593236548791,
-      "Chrome": 0.6694962210721086,
-      "Slack": 0.6879280895636523
+      "Figma": 0.7746363955177441,
+      "Photoshop": 0.6734632422882866,
+      "Illustrator": 0.6957317594776684,
+      "Chrome": 0.7933541354671774
     },
     "work_schedule": {
-      "start_hour": "8",
-      "end_hour": "17",
-      "chronotype": "morning_person",
-      "break_frequency": 1.2452977184781295
+      "start_hour": "9",
+      "end_hour": "18",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.1307607764993377
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.21126091511914488,
-      "notification_tolerance": 0.46027219558623655,
-      "collaboration_frequency": -0.0973936958659235,
-      "learning_orientation": 0.7044857994559625,
-      "efficiency_consciousness": 0.39687869686641736
+      "multitasking_tendency": 0.4662411602293814,
+      "notification_tolerance": 0.3011387456952475,
+      "collaboration_frequency": 0.41961685829776624,
+      "learning_orientation": 0.7883294786476616,
+      "efficiency_consciousness": 0.66022087565057
     }
   },
   {
     "user_id": 8,
-    "persona_type": "developer",
-    "productivity_baseline": 0.8586430581951526,
-    "focus_tendency": 0.3655835581765745,
-    "interruption_tolerance": 0.6959079006397565,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.7620376862635756,
+    "focus_tendency": 0.2977602099270625,
+    "interruption_tolerance": 0.5622699708108732,
     "tool_proficiency": {
-      "VSCode": 0.46711821437055945,
-      "Terminal": 0.29348491588660264,
-      "Chrome": 0.463673149186917,
-      "Slack": 0.6174139288941678
+      "Excel": 0.7909289861476134,
+      "PowerBI": 0.8516648352209716,
+      "SQL Server": 0.40510057250185694,
+      "Tableau": 0.8254339073134409
     },
     "work_schedule": {
-      "start_hour": "7",
+      "start_hour": "8",
       "end_hour": "17",
-      "chronotype": "consistent",
-      "break_frequency": 1.48632255235152
+      "chronotype": "morning_person",
+      "break_frequency": 0.9660143747136708
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.4356586836839267,
-      "notification_tolerance": 0.6111797958366921,
-      "collaboration_frequency": 0.2130802874948476,
-      "learning_orientation": 0.6972293932044354,
-      "efficiency_consciousness": 0.8380803682560398
+      "multitasking_tendency": 0.13206324806002304,
+      "notification_tolerance": 0.31158249398495474,
+      "collaboration_frequency": 0.24212603845006966,
+      "learning_orientation": 0.313602683369795,
+      "efficiency_consciousness": 0.5096984610779502
     }
   },
   {
     "user_id": 9,
-    "persona_type": "customer_support",
-    "productivity_baseline": 0.7310913068408933,
-    "focus_tendency": 0.2964826353940175,
-    "interruption_tolerance": 0.3352586592201262,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.7382626604299554,
+    "focus_tendency": 0.7087823424014739,
+    "interruption_tolerance": 0.36426655189249457,
     "tool_proficiency": {
-      "Zendesk": 0.5169451283981823,
-      "Intercom": 0.4913810448622576,
-      "Claude": 0.7126780568701161,
-      "Slack": 0.5751706503885783
+      "Excel": 0.45536116856061054,
+      "PowerBI": 0.38840759286787074,
+      "SQL Server": 0.4531118117886545,
+      "Tableau": 0.5742657832557779
     },
     "work_schedule": {
-      "start_hour": "9",
+      "start_hour": "8",
       "end_hour": "18",
-      "chronotype": "night_owl",
-      "break_frequency": 0.9456405653190992
+      "chronotype": "morning_person",
+      "break_frequency": 1.3765135209826265
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.2615937391614353,
-      "notification_tolerance": 0.4268440976594872,
-      "collaboration_frequency": 0.14697226174881525,
-      "learning_orientation": 0.6032921229695541,
-      "efficiency_consciousness": 0.9371974610602753
+      "multitasking_tendency": 0.10685387337013878,
+      "notification_tolerance": 0.6109126854447909,
+      "collaboration_frequency": 0.20780147998194598,
+      "learning_orientation": 0.5864001802908391,
+      "efficiency_consciousness": 0.8419240990068838
     }
   },
   {
     "user_id": 10,
-    "persona_type": "developer",
-    "productivity_baseline": 0.8496840843090653,
-    "focus_tendency": 0.4499006457929106,
-    "interruption_tolerance": 0.7035928759380448,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.7994915335720061,
+    "focus_tendency": 0.5281247846447459,
+    "interruption_tolerance": 0.268904339041256,
     "tool_proficiency": {
-      "VSCode": 0.5290540876371332,
-      "Terminal": 0.7964814810332481,
-      "Chrome": 0.4272775671410922,
-      "Slack": 0.42519716817591335
+      "Zendesk": 0.299039227154345,
+      "Intercom": 0.6301739516531695,
+      "Claude": 0.3876329672288976,
+      "Slack": 0.5699075818351979
     },
     "work_schedule": {
-      "start_hour": "8",
-      "end_hour": "18",
+      "start_hour": "7",
+      "end_hour": "17",
       "chronotype": "afternoon_person",
-      "break_frequency": 1.392025437328909
+      "break_frequency": 1.080365527432788
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.05245236988787971,
-      "notification_tolerance": 0.817729122812103,
-      "collaboration_frequency": 0.13228278223055676,
-      "learning_orientation": 0.6327816213803668,
-      "efficiency_consciousness": 0.5913356128482089
+      "multitasking_tendency": 0.3739557621788392,
+      "notification_tolerance": 0.6902854637796271,
+      "collaboration_frequency": 0.08126022091595289,
+      "learning_orientation": 0.5873178984309035,
+      "efficiency_consciousness": 0.4707990500686957
     }
   },
   {
     "user_id": 11,
-    "persona_type": "analyst",
-    "productivity_baseline": 0.808436568032981,
-    "focus_tendency": 0.6675839701373232,
-    "interruption_tolerance": 0.5573703411261507,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.6489772128482062,
+    "focus_tendency": 0.27599115554774883,
+    "interruption_tolerance": 0.42535617080909727,
     "tool_proficiency": {
-      "Excel": 0.45166686007623874,
-      "PowerBI": 0.4279233184596011,
-      "SQL Server": 0.6838142509858648,
-      "Tableau": 0.5830539345515772
-    },
-    "work_schedule": {
-      "start_hour": "9",
-      "end_hour": "18",
-      "chronotype": "afternoon_person",
-      "break_frequency": 1.0307755050541558
-    },
-    "behavioral_patterns": {
-      "multitasking_tendency": 0.48010785659385624,
-      "notification_tolerance": 0.8682213085561991,
-      "collaboration_frequency": 0.11069039654704671,
-      "learning_orientation": 0.025364849153399073,
-      "efficiency_consciousness": 0.27378179787120704
-    }
-  },
-  {
-    "user_id": 12,
-    "persona_type": "developer",
-    "productivity_baseline": 0.897348397728935,
-    "focus_tendency": 0.4102546120200852,
-    "interruption_tolerance": 0.7693242562629662,
-    "tool_proficiency": {
-      "VSCode": 0.1801464632569231,
-      "Terminal": 0.9244493756510229,
-      "Chrome": 0.5479964263693131,
-      "Slack": 0.8352933873343452
-    },
-    "work_schedule": {
-      "start_hour": "9",
-      "end_hour": "17",
-      "chronotype": "morning_person",
-      "break_frequency": 0.8715507315782126
-    },
-    "behavioral_patterns": {
-      "multitasking_tendency": 0.61823435694646,
-      "notification_tolerance": 0.8216866901211681,
-      "collaboration_frequency": 0.00961471954456683,
-      "learning_orientation": 0.3753277814842821,
-      "efficiency_consciousness": 0.5109153612287712
-    }
-  },
-  {
-    "user_id": 13,
-    "persona_type": "developer",
-    "productivity_baseline": 0.7573249492093185,
-    "focus_tendency": 0.4369627400253798,
-    "interruption_tolerance": 0.613052467624811,
-    "tool_proficiency": {
-      "VSCode": 0.5869369103364868,
-      "Terminal": 0.9101229445639788,
-      "Chrome": 0.5868631553927256,
-      "Slack": 0.7352884539571326
+      "Zendesk": 0.7412244903998314,
+      "Intercom": 0.539454432603751,
+      "Claude": 0.19747752976372548,
+      "Slack": 0.5485921703791962
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "17",
       "chronotype": "morning_person",
-      "break_frequency": 1.160839601072985
+      "break_frequency": 1.216628410847623
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.1670062191477825,
-      "notification_tolerance": 0.835057151270501,
-      "collaboration_frequency": 0.27341698762708894,
-      "learning_orientation": 0.3585876077920391,
-      "efficiency_consciousness": 0.566058699531441
+      "multitasking_tendency": 0.2946184096403283,
+      "notification_tolerance": 0.5674441825218269,
+      "collaboration_frequency": 0.27019935548702106,
+      "learning_orientation": 0.7916076468637,
+      "efficiency_consciousness": 0.8088477887175572
+    }
+  },
+  {
+    "user_id": 12,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.8666265717494399,
+    "focus_tendency": 0.20619692825829586,
+    "interruption_tolerance": 0.42564116513648004,
+    "tool_proficiency": {
+      "Zendesk": 0.8264303606176829,
+      "Intercom": 0.9168876989514438,
+      "Claude": 0.26633544914099744,
+      "Slack": 0.6655596359412107
+    },
+    "work_schedule": {
+      "start_hour": "7",
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 0.7045254999092724
+    },
+    "behavioral_patterns": {
+      "multitasking_tendency": 0.5918092718308176,
+      "notification_tolerance": 0.4978115400801194,
+      "collaboration_frequency": -0.03220256966625107,
+      "learning_orientation": 0.42417399641893044,
+      "efficiency_consciousness": 0.7064657840950783
+    }
+  },
+  {
+    "user_id": 13,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.7248557625142451,
+    "focus_tendency": 0.40805915569810614,
+    "interruption_tolerance": 0.6284876755935029,
+    "tool_proficiency": {
+      "Excel": 0.6869129439451069,
+      "PowerBI": 0.5932178976460035,
+      "SQL Server": 0.7279552642524523,
+      "Tableau": 0.4067776714245662
+    },
+    "work_schedule": {
+      "start_hour": "7",
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.4508307426124207
+    },
+    "behavioral_patterns": {
+      "multitasking_tendency": 0.7135772548686262,
+      "notification_tolerance": 0.32015343974649735,
+      "collaboration_frequency": 0.25823296643339344,
+      "learning_orientation": 0.7363140587389844,
+      "efficiency_consciousness": 0.6752962007109161
     }
   },
   {
     "user_id": 14,
     "persona_type": "customer_support",
-    "productivity_baseline": 0.8649176778118539,
-    "focus_tendency": 0.6136328974757019,
-    "interruption_tolerance": 0.43118373186556913,
+    "productivity_baseline": 0.7820556221411632,
+    "focus_tendency": 0.3015020148710323,
+    "interruption_tolerance": 0.46085793027240185,
     "tool_proficiency": {
-      "Zendesk": 0.14419743062621473,
-      "Intercom": 0.3106163869916245,
-      "Claude": 0.5154216251906683,
-      "Slack": 0.5112850382529543
+      "Zendesk": 0.8072705441668803,
+      "Intercom": 0.2256278799744636,
+      "Claude": 0.6161818831563383,
+      "Slack": 0.9168768513260729
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "17",
-      "chronotype": "morning_person",
-      "break_frequency": 1.3299753243093264
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.007732149102385
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.11720277417548496,
-      "notification_tolerance": 0.8442752764929549,
-      "collaboration_frequency": -0.0710105395737882,
-      "learning_orientation": 0.5408110272405944,
-      "efficiency_consciousness": 0.8383481302529077
+      "multitasking_tendency": 0.2710980563817447,
+      "notification_tolerance": 0.6099150586861941,
+      "collaboration_frequency": 0.27993011795323164,
+      "learning_orientation": 0.39581657312379753,
+      "efficiency_consciousness": 0.5538293397867451
     }
   },
   {
     "user_id": 15,
     "persona_type": "customer_support",
-    "productivity_baseline": 0.8609434264968346,
-    "focus_tendency": 0.20182655979703393,
-    "interruption_tolerance": 0.4801058897526974,
+    "productivity_baseline": 0.7610735085658288,
+    "focus_tendency": 0.7832028080527981,
+    "interruption_tolerance": 0.2634820291893831,
     "tool_proficiency": {
-      "Zendesk": 0.4876542438602962,
-      "Intercom": 0.484987666248915,
-      "Claude": 0.6302810169920812,
-      "Slack": 0.363821148562443
+      "Zendesk": 0.8060643511141546,
+      "Intercom": 0.5376432698645915,
+      "Claude": 0.49164580819296133,
+      "Slack": 0.8816142953390886
     },
     "work_schedule": {
-      "start_hour": "8",
-      "end_hour": "16",
-      "chronotype": "morning_person",
-      "break_frequency": 0.7007290805620755
+      "start_hour": "7",
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.207674061531317
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.3626233296439612,
-      "notification_tolerance": 0.7249579291441716,
-      "collaboration_frequency": 0.030040342092923902,
-      "learning_orientation": 0.4602954333924733,
-      "efficiency_consciousness": 0.256866819738696
+      "multitasking_tendency": 0.33395783932478956,
+      "notification_tolerance": 0.7910865261927247,
+      "collaboration_frequency": 0.061370980536540096,
+      "learning_orientation": 0.33800289085113183,
+      "efficiency_consciousness": 0.8197730687877974
     }
   },
   {
     "user_id": 16,
     "persona_type": "analyst",
-    "productivity_baseline": 0.7549748382216335,
-    "focus_tendency": 0.3652595304129561,
-    "interruption_tolerance": 0.5876985093626154,
+    "productivity_baseline": 0.6035082270145202,
+    "focus_tendency": 0.09947510406378754,
+    "interruption_tolerance": 0.4235777265780871,
     "tool_proficiency": {
-      "Excel": 0.6904919998091326,
-      "PowerBI": 0.3624656195060356,
-      "SQL Server": 0.7275639731978732,
-      "Tableau": 0.6774974903206266
+      "Excel": 0.72186803286672,
+      "PowerBI": 0.5308883984953012,
+      "SQL Server": 0.9751143331806981,
+      "Tableau": 0.4424963587183173
     },
     "work_schedule": {
-      "start_hour": "7",
+      "start_hour": "8",
       "end_hour": "17",
       "chronotype": "afternoon_person",
-      "break_frequency": 1.4974841457810504
+      "break_frequency": 1.2150016805534363
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.21822048751729026,
-      "notification_tolerance": 0.8552987628468826,
-      "collaboration_frequency": 0.210542245944672,
-      "learning_orientation": 0.5409413010011305,
-      "efficiency_consciousness": 0.5705724873601234
+      "multitasking_tendency": 0.7839720362493322,
+      "notification_tolerance": 0.48634575292895976,
+      "collaboration_frequency": 0.19175072024932138,
+      "learning_orientation": 0.4955152985311319,
+      "efficiency_consciousness": 0.8310055372703534
     }
   },
   {
     "user_id": 17,
-    "persona_type": "developer",
-    "productivity_baseline": 0.9002891355274557,
-    "focus_tendency": 0.7431635967619679,
-    "interruption_tolerance": 0.7621010654441916,
+    "persona_type": "customer_support",
+    "productivity_baseline": 0.7703532792618405,
+    "focus_tendency": 0.2742383664236152,
+    "interruption_tolerance": 0.18575808674515432,
     "tool_proficiency": {
-      "VSCode": 0.7970431410429172,
-      "Terminal": 0.32485221946805765,
-      "Chrome": 0.45460126758412567,
-      "Slack": 0.9122958439695266
+      "Zendesk": 0.613695789380554,
+      "Intercom": 0.21473181463489355,
+      "Claude": 0.6176577320546969,
+      "Slack": 0.5004456163325405
     },
     "work_schedule": {
       "start_hour": "8",
-      "end_hour": "16",
-      "chronotype": "morning_person",
-      "break_frequency": 0.832460807686989
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.3260700597974096
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.42622708890759864,
-      "notification_tolerance": 0.3283513611939032,
-      "collaboration_frequency": 0.11476290665475125,
-      "learning_orientation": 0.681236283591228,
-      "efficiency_consciousness": 0.49522764657155727
+      "multitasking_tendency": 0.3304409426416364,
+      "notification_tolerance": 0.7215043143704541,
+      "collaboration_frequency": 0.2257805055215607,
+      "learning_orientation": 0.8455185762128401,
+      "efficiency_consciousness": 0.5623943114229787
     }
   },
   {
     "user_id": 18,
-    "persona_type": "developer",
-    "productivity_baseline": 0.652668276853371,
-    "focus_tendency": 0.23013475336455955,
-    "interruption_tolerance": 0.7620161498162795,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.629208980694966,
+    "focus_tendency": 0.14986249899043586,
+    "interruption_tolerance": 0.586166062541467,
     "tool_proficiency": {
-      "VSCode": 0.4214485825894572,
-      "Terminal": 0.2808582791829099,
-      "Chrome": 0.2749242854793016,
-      "Slack": 0.5199059793639914
+      "Excel": 0.5609914650362136,
+      "PowerBI": 0.7685410645741152,
+      "SQL Server": 0.2770534766633525,
+      "Tableau": 0.6937976742364961
     },
     "work_schedule": {
-      "start_hour": "9",
+      "start_hour": "8",
       "end_hour": "17",
-      "chronotype": "night_owl",
-      "break_frequency": 1.4825341318350476
+      "chronotype": "consistent",
+      "break_frequency": 0.8041143393821021
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.8256635531298482,
-      "notification_tolerance": 0.6124145370346721,
-      "collaboration_frequency": 0.09268322624699929,
-      "learning_orientation": 0.42612620885255065,
-      "efficiency_consciousness": 0.794921856306369
+      "multitasking_tendency": 0.48878490014253045,
+      "notification_tolerance": 0.430538704278857,
+      "collaboration_frequency": 0.2578489852918078,
+      "learning_orientation": 0.7322639113585461,
+      "efficiency_consciousness": 0.08353852720722517
     }
   },
   {
     "user_id": 19,
-    "persona_type": "customer_support",
-    "productivity_baseline": 0.6654998845345145,
-    "focus_tendency": 0.9723716987240771,
-    "interruption_tolerance": 0.4073350750857297,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.8732742486165765,
+    "focus_tendency": 0.6211545847249788,
+    "interruption_tolerance": 0.717915590504274,
     "tool_proficiency": {
-      "Zendesk": 0.8116157656677118,
-      "Intercom": 0.38682438506600336,
-      "Claude": 0.8144406530590874,
-      "Slack": 0.780674773255263
+      "Excel": 0.32601322478409545,
+      "PowerBI": 0.16095498560455432,
+      "SQL Server": 0.6358503907851014,
+      "Tableau": 0.6562046867475542
     },
     "work_schedule": {
       "start_hour": "9",
-      "end_hour": "18",
+      "end_hour": "17",
       "chronotype": "afternoon_person",
-      "break_frequency": 0.7405344044752329
+      "break_frequency": 0.7041822157864123
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.39421163183101204,
-      "notification_tolerance": 0.5212036888701459,
-      "collaboration_frequency": 0.35338165344494377,
-      "learning_orientation": 0.8478831974439524,
-      "efficiency_consciousness": 0.5259215589792542
+      "multitasking_tendency": 0.4551319721555077,
+      "notification_tolerance": 0.45494882669644937,
+      "collaboration_frequency": 0.05284385217984092,
+      "learning_orientation": 0.8000035075556583,
+      "efficiency_consciousness": 0.06926616146985004
     }
   },
   {
     "user_id": 20,
     "persona_type": "analyst",
-    "productivity_baseline": 0.6330786301680664,
-    "focus_tendency": 0.6361503445154437,
-    "interruption_tolerance": 0.522920327839549,
+    "productivity_baseline": 0.7122148295442393,
+    "focus_tendency": 0.22962480977212787,
+    "interruption_tolerance": 0.5889702722405796,
     "tool_proficiency": {
-      "Excel": 0.8655161482060945,
-      "PowerBI": 0.6939544106582225,
-      "SQL Server": 0.5476975520292621,
-      "Tableau": 0.7080322478394301
+      "Excel": 0.19778757128775543,
+      "PowerBI": 0.6174593234848658,
+      "SQL Server": 0.6086018742428807,
+      "Tableau": 0.4406489004381412
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "17",
       "chronotype": "afternoon_person",
-      "break_frequency": 0.8646079567300213
+      "break_frequency": 0.9057505423017048
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.648655715044947,
-      "notification_tolerance": 0.5605730706020308,
-      "collaboration_frequency": 0.14842159514073588,
-      "learning_orientation": 0.8820175407833784,
-      "efficiency_consciousness": 0.7284353183272768
+      "multitasking_tendency": 0.526788773351687,
+      "notification_tolerance": 0.7890915323299474,
+      "collaboration_frequency": 0.14682323900443098,
+      "learning_orientation": 0.3722632094756225,
+      "efficiency_consciousness": 0.8319269283858329
     }
   },
   {
     "user_id": 21,
-    "persona_type": "developer",
-    "productivity_baseline": 0.8949177153410761,
-    "focus_tendency": 0.27985262195475347,
-    "interruption_tolerance": 0.6943669026269178,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.8753155096071383,
+    "focus_tendency": 0.5199042950602766,
+    "interruption_tolerance": 0.5527858332975715,
     "tool_proficiency": {
-      "VSCode": 0.8396438229439035,
-      "Terminal": 0.5934078541453579,
-      "Chrome": 0.6915694524249522,
-      "Slack": 0.6641794478607099
-    },
-    "work_schedule": {
-      "start_hour": "7",
-      "end_hour": "17",
-      "chronotype": "morning_person",
-      "break_frequency": 1.2589942813696429
-    },
-    "behavioral_patterns": {
-      "multitasking_tendency": 0.13303469623948966,
-      "notification_tolerance": 0.7031309411192832,
-      "collaboration_frequency": 0.2521137871843836,
-      "learning_orientation": 0.48469182901420477,
-      "efficiency_consciousness": 0.6915324656386449
-    }
-  },
-  {
-    "user_id": 22,
-    "persona_type": "customer_support",
-    "productivity_baseline": 0.8107967000719052,
-    "focus_tendency": 0.6517851441169908,
-    "interruption_tolerance": 0.4776073119925184,
-    "tool_proficiency": {
-      "Zendesk": 0.6063182796191954,
-      "Intercom": 0.841371501263272,
-      "Claude": 0.7275492601123382,
-      "Slack": 0.7658541166251901
+      "Excel": 0.5688994830978004,
+      "PowerBI": 0.5503227945307309,
+      "SQL Server": 0.2756318844092547,
+      "Tableau": 0.7482851074196613
     },
     "work_schedule": {
       "start_hour": "8",
       "end_hour": "17",
-      "chronotype": "afternoon_person",
-      "break_frequency": 0.7583742267816305
+      "chronotype": "morning_person",
+      "break_frequency": 0.9675467960190397
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.36618930503699426,
-      "notification_tolerance": 0.4781300243669869,
-      "collaboration_frequency": 0.024619637696325886,
-      "learning_orientation": 0.7311223181222753,
-      "efficiency_consciousness": 0.5939612330797814
+      "multitasking_tendency": 0.5543377546368133,
+      "notification_tolerance": 0.5781973574749466,
+      "collaboration_frequency": 0.19365460330528472,
+      "learning_orientation": 0.7224221846701139,
+      "efficiency_consciousness": 0.4190895588343266
+    }
+  },
+  {
+    "user_id": 22,
+    "persona_type": "developer",
+    "productivity_baseline": 0.9080701188087563,
+    "focus_tendency": 0.5082039481565577,
+    "interruption_tolerance": 0.7070099873711085,
+    "tool_proficiency": {
+      "VSCode": 0.6953308872964217,
+      "Terminal": 0.7193335972734415,
+      "Chrome": 0.847410773600568,
+      "Slack": 0.6143688482812286
+    },
+    "work_schedule": {
+      "start_hour": "8",
+      "end_hour": "17",
+      "chronotype": "night_owl",
+      "break_frequency": 0.9712824363379653
+    },
+    "behavioral_patterns": {
+      "multitasking_tendency": 0.35496778297739573,
+      "notification_tolerance": 0.8848702888846524,
+      "collaboration_frequency": 0.1370533107932414,
+      "learning_orientation": 0.6094237898484807,
+      "efficiency_consciousness": 0.6204468834809539
     }
   },
   {
     "user_id": 23,
     "persona_type": "developer",
-    "productivity_baseline": 0.9615123498485373,
-    "focus_tendency": 0.868137874678184,
-    "interruption_tolerance": 0.8725528209639557,
+    "productivity_baseline": 0.8225007075519907,
+    "focus_tendency": 0.43586474627227806,
+    "interruption_tolerance": 0.6283128838832405,
     "tool_proficiency": {
-      "VSCode": 0.8151546531424385,
-      "Terminal": 0.4422455179725428,
-      "Chrome": 0.33726987102981837,
-      "Slack": 0.7944263158782846
+      "VSCode": 0.679182405613638,
+      "Terminal": 0.7627628341192462,
+      "Chrome": 0.6459807287047681,
+      "Slack": 0.6211254558529888
     },
     "work_schedule": {
-      "start_hour": "7",
-      "end_hour": "18",
-      "chronotype": "night_owl",
-      "break_frequency": 1.0301127866253017
+      "start_hour": "8",
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 1.2229455162061982
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.5679827125139254,
-      "notification_tolerance": 0.3014963444798657,
-      "collaboration_frequency": 0.16626126833257124,
-      "learning_orientation": 0.2801580493737688,
-      "efficiency_consciousness": 0.4543674397927236
+      "multitasking_tendency": 0.5061248362378911,
+      "notification_tolerance": 0.5747611092663187,
+      "collaboration_frequency": 0.15316862912456097,
+      "learning_orientation": 0.5942918079091045,
+      "efficiency_consciousness": 0.4653164977959518
     }
   },
   {
     "user_id": 24,
-    "persona_type": "developer",
-    "productivity_baseline": 0.8898545618829897,
-    "focus_tendency": 0.34502735091906583,
-    "interruption_tolerance": 0.6818674375177718,
+    "persona_type": "analyst",
+    "productivity_baseline": 0.7911141921554725,
+    "focus_tendency": 0.4173454468559516,
+    "interruption_tolerance": 0.7063671524808914,
     "tool_proficiency": {
-      "VSCode": 0.6215872681011622,
-      "Terminal": 0.6511300555330372,
-      "Chrome": 0.5383244036853329,
-      "Slack": 0.6203174890048905
+      "Excel": 0.27005645660686006,
+      "PowerBI": 0.2979117200452083,
+      "SQL Server": 0.5443976760125971,
+      "Tableau": 0.5416498418105997
     },
     "work_schedule": {
-      "start_hour": "9",
-      "end_hour": "18",
-      "chronotype": "night_owl",
-      "break_frequency": 1.3353514594072542
+      "start_hour": "7",
+      "end_hour": "17",
+      "chronotype": "afternoon_person",
+      "break_frequency": 0.899990544676015
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.7358817152021334,
-      "notification_tolerance": 0.7330010913300358,
-      "collaboration_frequency": 0.20168742018238595,
-      "learning_orientation": 0.23618247503791667,
-      "efficiency_consciousness": 0.9165491102984072
+      "multitasking_tendency": 0.1478561632680738,
+      "notification_tolerance": 0.3391309572042683,
+      "collaboration_frequency": 0.10294204335518331,
+      "learning_orientation": 0.2554681030654644,
+      "efficiency_consciousness": 0.5033588652703858
     }
   },
   {
     "user_id": 25,
-    "persona_type": "analyst",
-    "productivity_baseline": 0.6687973297271508,
-    "focus_tendency": 0.6084450613819593,
-    "interruption_tolerance": 0.7577218284044176,
+    "persona_type": "customer_support",
+    "productivity_baseline": 1.0,
+    "focus_tendency": 0.8218647312186186,
+    "interruption_tolerance": 0.4779343817034535,
     "tool_proficiency": {
-      "Excel": 0.7231463816989725,
-      "PowerBI": 0.5312761564061015,
-      "SQL Server": 0.5161088405295117,
-      "Tableau": 0.14576858988476665
+      "Zendesk": 0.683243519456333,
+      "Intercom": 0.47617701150949193,
+      "Claude": 0.741829675511542,
+      "Slack": 0.7136106624034129
     },
     "work_schedule": {
       "start_hour": "8",
-      "end_hour": "18",
-      "chronotype": "afternoon_person",
-      "break_frequency": 1.3198227312714572
+      "end_hour": "17",
+      "chronotype": "night_owl",
+      "break_frequency": 1.3359655751739894
     },
     "behavioral_patterns": {
-      "multitasking_tendency": 0.5008481004041897,
-      "notification_tolerance": 0.6431951774213582,
-      "collaboration_frequency": 0.10520516881174734,
-      "learning_orientation": 0.888008217906532,
-      "efficiency_consciousness": 0.7852404511948751
+      "multitasking_tendency": 0.7099800906908892,
+      "notification_tolerance": 0.616617065439605,
+      "collaboration_frequency": 0.0683355032253222,
+      "learning_orientation": 0.8618575362377667,
+      "efficiency_consciousness": 0.8270206744248985
     }
   }
 ]

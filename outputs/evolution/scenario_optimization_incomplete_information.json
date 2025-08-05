@@ -1,0 +1,45 @@
+{
+  "scenario_type": "incomplete_information",
+  "optimization_timestamp": "2025-08-05T13:54:40.916419",
+  "target_improvement": 0.25,
+  "achieved_improvement": 0.2860416619934971,
+  "generations_required": 1,
+  "best_strategy": {
+    "persona": "developer",
+    "genes": {
+      "language_style": "inspiring",
+      "primary_nudge_type": "organization",
+      "confidence_threshold": 0.8,
+      "timing_preference": "batch",
+      "intervention_level": "intensive",
+      "context_weights": {
+        "cognitive_load": 0.2,
+        "productivity_score": 0.1,
+        "tab_count": 0.05,
+        "focus_duration": 0.3
+      },
+      "variance_sensitivity": 0.11015818169242549,
+      "adaptation_speed": 0.7061775672298297,
+      "personalization_depth": 0.8778569633112228
+    },
+    "fitness_score": 0.7860416619934971,
+    "generation": 0,
+    "mutations_count": 0,
+    "performance_history": []
+  },
+  "fitness_progression": [
+    0.7860416619934971
+  ],
+  "scenario_specific_adaptations": {
+    "language_adaptation": "inspiring",
+    "intervention_adaptation": "intensive",
+    "confidence_adaptation": 0.8,
+    "variance_adaptation": 0.11015818169242549,
+    "scenario_fitness": 0.7860416619934971,
+    "uncertainty_handling": {
+      "gentle_approach": false,
+      "exploratory_language": false,
+      "context_aware": false
+    }
+  }
+}

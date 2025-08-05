@@ -1,0 +1,170 @@
+{
+  "developer": {
+    "genes": {
+      "language_style": "direct",
+      "primary_nudge_type": "productivity",
+      "confidence_threshold": 0.4,
+      "timing_preference": "deferred",
+      "intervention_level": "subtle",
+      "context_weights": {
+        "cognitive_load": 0.2,
+        "productivity_score": 0.1,
+        "tab_count": 0.2,
+        "focus_duration": 0.25
+      },
+      "variance_sensitivity": 0.07885676045671584,
+      "adaptation_speed": 0.28535478203195386,
+      "personalization_depth": 0.9414930074579716
+    },
+    "performance": {
+      "final_fitness": 0.8441460306855659,
+      "generation": 149,
+      "mutations": 21
+    },
+    "coaching_parameters": {
+      "language_style": "direct",
+      "confidence_threshold": 0.4,
+      "intervention_level": "subtle",
+      "variance_sensitivity": 0.07885676045671584,
+      "personalization_depth": 0.9414930074579716,
+      "context_prioritization": {
+        "cognitive_load": 0.2,
+        "productivity_score": 0.1,
+        "tab_count": 0.2,
+        "focus_duration": 0.25
+      },
+      "timing_optimization": "deferred",
+      "adaptive_factors": {
+        "stress_response": 0.07885676045671584,
+        "cognitive_load_adaptation": 0.2,
+        "productivity_correlation": 0.1
+      }
+    }
+  },
+  "analyst": {
+    "genes": {
+      "language_style": "analytical",
+      "primary_nudge_type": "organization",
+      "confidence_threshold": 0.9,
+      "timing_preference": "immediate",
+      "intervention_level": "moderate",
+      "context_weights": {
+        "cognitive_load": 0.3,
+        "productivity_score": 0.2,
+        "tab_count": 0.2,
+        "focus_duration": 0.15
+      },
+      "variance_sensitivity": 0.5108991068125118,
+      "adaptation_speed": 0.45369454051176217,
+      "personalization_depth": 0.9034998491016952
+    },
+    "performance": {
+      "final_fitness": 0.8418892692794196,
+      "generation": 149,
+      "mutations": 14
+    },
+    "coaching_parameters": {
+      "language_style": "analytical",
+      "confidence_threshold": 0.9,
+      "intervention_level": "moderate",
+      "variance_sensitivity": 0.5108991068125118,
+      "personalization_depth": 0.9034998491016952,
+      "context_prioritization": {
+        "cognitive_load": 0.3,
+        "productivity_score": 0.2,
+        "tab_count": 0.2,
+        "focus_duration": 0.15
+      },
+      "timing_optimization": "immediate",
+      "adaptive_factors": {
+        "stress_response": 0.5108991068125118,
+        "cognitive_load_adaptation": 0.3,
+        "productivity_correlation": 0.2
+      }
+    }
+  },
+  "manager": {
+    "genes": {
+      "language_style": "direct",
+      "primary_nudge_type": "learning",
+      "confidence_threshold": 0.8,
+      "timing_preference": "optimal_window",
+      "intervention_level": "subtle",
+      "context_weights": {
+        "cognitive_load": 0.5,
+        "productivity_score": 0.5,
+        "tab_count": 0.1,
+        "focus_duration": 0.1
+      },
+      "variance_sensitivity": 0.6048249010186285,
+      "adaptation_speed": 0.6873575192690857,
+      "personalization_depth": 0.8286259372607229
+    },
+    "performance": {
+      "final_fitness": 0.8499531108854094,
+      "generation": 149,
+      "mutations": 21
+    },
+    "coaching_parameters": {
+      "language_style": "direct",
+      "confidence_threshold": 0.8,
+      "intervention_level": "subtle",
+      "variance_sensitivity": 0.6048249010186285,
+      "personalization_depth": 0.8286259372607229,
+      "context_prioritization": {
+        "cognitive_load": 0.5,
+        "productivity_score": 0.5,
+        "tab_count": 0.1,
+        "focus_duration": 0.1
+      },
+      "timing_optimization": "optimal_window",
+      "adaptive_factors": {
+        "stress_response": 0.6048249010186285,
+        "cognitive_load_adaptation": 0.5,
+        "productivity_correlation": 0.5
+      }
+    }
+  },
+  "designer": {
+    "genes": {
+      "language_style": "encouraging",
+      "primary_nudge_type": "organization",
+      "confidence_threshold": 0.9,
+      "timing_preference": "batch",
+      "intervention_level": "moderate",
+      "context_weights": {
+        "cognitive_load": 0.2,
+        "productivity_score": 0.3,
+        "tab_count": 0.15,
+        "focus_duration": 0.3
+      },
+      "variance_sensitivity": 0.44074963737281014,
+      "adaptation_speed": 0.7550282265186182,
+      "personalization_depth": 0.858764872731294
+    },
+    "performance": {
+      "final_fitness": 0.0,
+      "generation": 149,
+      "mutations": 0
+    },
+    "coaching_parameters": {
+      "language_style": "encouraging",
+      "confidence_threshold": 0.9,
+      "intervention_level": "moderate",
+      "variance_sensitivity": 0.44074963737281014,
+      "personalization_depth": 0.858764872731294,
+      "context_prioritization": {
+        "cognitive_load": 0.2,
+        "productivity_score": 0.3,
+        "tab_count": 0.15,
+        "focus_duration": 0.3
+      },
+      "timing_optimization": "batch",
+      "adaptive_factors": {
+        "stress_response": 0.44074963737281014,
+        "cognitive_load_adaptation": 0.2,
+        "productivity_correlation": 0.3
+      }
+    }
+  }
+}

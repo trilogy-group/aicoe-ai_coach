@@ -1,0 +1,87 @@
+{
+  "evolution_summary": {
+    "timestamp": "2025-08-05T13:54:39.716583",
+    "method": "OpenEvolve Genetic Algorithm",
+    "objective": "Maximize AI Coach Effectiveness and User Acceptance",
+    "personas_optimized": [
+      "developer",
+      "analyst",
+      "manager",
+      "designer"
+    ],
+    "total_generations": 150,
+    "population_size": 50
+  },
+  "performance_improvements": {
+    "developer": {
+      "final_fitness": 0.8441460306855659,
+      "improvement_percentage": 68.82920613711319,
+      "generations_evolved": 149,
+      "mutations_applied": 21
+    },
+    "analyst": {
+      "final_fitness": 0.8418892692794196,
+      "improvement_percentage": 68.37785385588393,
+      "generations_evolved": 149,
+      "mutations_applied": 14
+    },
+    "manager": {
+      "final_fitness": 0.8499531108854094,
+      "improvement_percentage": 69.99062217708187,
+      "generations_evolved": 149,
+      "mutations_applied": 21
+    },
+    "designer": {
+      "final_fitness": 0.0,
+      "improvement_percentage": -100.0,
+      "generations_evolved": 149,
+      "mutations_applied": 0
+    }
+  },
+  "best_performing_persona": "manager",
+  "optimization_success_rate": 75.0,
+  "improvement_metrics": {
+    "average_fitness_improvement": 0.2679942054251975,
+    "best_final_fitness": 0.8499531108854094,
+    "successful_optimizations": 3,
+    "total_personas": 4
+  },
+  "evolved_strategies_summary": {
+    "developer": {
+      "language_style": "direct",
+      "intervention_level": "subtle",
+      "confidence_threshold": 0.4,
+      "variance_sensitivity": 0.07885676045671584
+    },
+    "analyst": {
+      "language_style": "analytical",
+      "intervention_level": "moderate",
+      "confidence_threshold": 0.9,
+      "variance_sensitivity": 0.5108991068125118
+    },
+    "manager": {
+      "language_style": "direct",
+      "intervention_level": "subtle",
+      "confidence_threshold": 0.8,
+      "variance_sensitivity": 0.6048249010186285
+    },
+    "designer": {
+      "language_style": "encouraging",
+      "intervention_level": "moderate",
+      "confidence_threshold": 0.9,
+      "variance_sensitivity": 0.44074963737281014
+    }
+  },
+  "genetic_diversity_analysis": {
+    "language_style_diversity": 0.75,
+    "intervention_level_diversity": 0.5,
+    "confidence_threshold_variance": 0.042499999999999996,
+    "unique_strategy_combinations": 3,
+    "convergence_indicators": {
+      "dominant_language_style": "direct",
+      "dominant_intervention_level": "subtle",
+      "average_confidence_threshold": 0.75
+    }
+  },
+  "convergence_analysis": {}
+}

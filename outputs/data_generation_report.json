@@ -1,31 +1,31 @@
 {
-  "generation_timestamp": "2025-08-04T22:52:56.761994",
+  "generation_timestamp": "2025-08-05T11:48:35.997883",
   "user_profiles": {
     "total_users": 25,
     "persona_distribution": {
-      "developer": 12,
-      "analyst": 6,
-      "customer_support": 6,
+      "analyst": 11,
+      "customer_support": 9,
+      "developer": 4,
       "designer": 1
     }
   },
   "telemetry_data": {
-    "total_records": 12815,
-    "date_range": "2025-07-22T07:00:00 to 2025-08-04T18:45:00",
+    "total_records": 13081,
+    "date_range": "2025-07-23T07:00:00 to 2025-08-05T18:45:00",
     "avg_metrics": {
-      "focus_duration": 19.056364490371067,
-      "cognitive_load": 0.5874897811093528,
-      "value_score": 0.24795635458608747,
-      "core_work_percentage": 0.3837710696257018
+      "focus_duration": 14.689663093415009,
+      "cognitive_load": 0.6096093513429166,
+      "value_score": 0.25023824586571214,
+      "core_work_percentage": 0.3549357323174485
     }
   },
   "interaction_data": {
     "total_interactions": 50,
-    "acceptance_rate": 0.6,
+    "acceptance_rate": 0.62,
     "persona_acceptance": {
-      "developer": 0.6956521739130435,
-      "analyst": 0.5625,
-      "customer_support": 0.4,
+      "analyst": 0.7,
+      "customer_support": 0.65,
+      "developer": 0.25,
       "designer": 1.0
     }
   },
@@ -34,28 +34,34 @@
       "timestamp": 0,
       "user_id": 0,
       "persona_type": 0,
-      "tab_count": 28,
-      "window_switches_15min": 42,
-      "focus_session_duration": 41,
-      "cognitive_load_score": 39,
-      "app_active": 29,
-      "task_category": 42,
-      "keystrokes_per_min": 21,
-      "break_duration_min": 32,
-      "interruption_count": 35,
-      "core_work_percentage": 36,
-      "value_score": 37
+      "tab_count": 18,
+      "window_switches_15min": 19,
+      "focus_session_duration": 21,
+      "cognitive_load_score": 33,
+      "app_active": 26,
+      "task_category": 22,
+      "keystrokes_per_min": 23,
+      "break_duration_min": 15,
+      "interruption_count": 22,
+      "core_work_percentage": 15,
+      "value_score": 23,
+      "screen_capture_metadata": 18,
+      "detected_content_elements": 25,
+      "workflow_inefficiencies": 19,
+      "missed_opportunities": 19,
+      "visual_attention_areas": 30,
+      "task_completion_indicators": 23
     },
     "outliers_detected": {
-      "tab_count": 223,
-      "window_switches_15min": 781,
-      "focus_session_duration": 527,
-      "cognitive_load_score": 79,
-      "keystrokes_per_min": 161,
-      "break_duration_min": 2791,
-      "interruption_count": 815,
-      "core_work_percentage": 0,
-      "value_score": 161
+      "tab_count": 62,
+      "window_switches_15min": 512,
+      "focus_session_duration": 312,
+      "cognitive_load_score": 60,
+      "keystrokes_per_min": 162,
+      "break_duration_min": 2924,
+      "interruption_count": 155,
+      "core_work_percentage": 1279,
+      "value_score": 150
     }
   }
 }
