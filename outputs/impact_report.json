@@ -1,0 +1,14 @@
+{
+  "performance_metrics": [],
+  "productivity_impacts": [],
+  "acceptance_rates": {},
+  "behavior_changes": [],
+  "roi_calculations": {
+    "productivity_improvement": 26.549773049517086,
+    "hours_saved_per_week": 10.619909219806834,
+    "annual_value_per_user": 45835.52819268629,
+    "roi_100_users": 4583552.819268629,
+    "roi_1000_users": 45835528.19268629
+  },
+  "scaling_metrics": {}
+}

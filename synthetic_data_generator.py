@@ -47,15 +47,16 @@ class SyntheticDataGenerator:
         
         # Persona configurations
         self.persona_configs = {
-            'manager': {
-                'base_productivity': 0.6,
-                'meeting_frequency': 0.4,
-                'interruption_rate': 0.8,
-                'core_work_percentage': 0.2,
-                'primary_apps': ['Outlook', 'Teams', 'PowerPoint', 'Excel'],
-                'tab_count_range': (8, 20),
-                'focus_duration_range': (5, 25),
-                'cognitive_load_range': (0.6, 0.9)
+            'customer_support': {
+                'base_productivity': 0.8,
+                'meeting_frequency': 0.1,
+                'interruption_rate': 0.6,  # Customers interrupt, but AI helps manage
+                'core_work_percentage': 0.7,  # High customer interaction focus
+                'primary_apps': ['Zendesk', 'Intercom', 'Claude', 'Slack'],
+                'tab_count_range': (4, 12),
+                'focus_duration_range': (15, 35),
+                'cognitive_load_range': (0.4, 0.75),
+                'ai_usage_frequency': 0.9  # Very high AI integration
             },
             'analyst': {
                 'base_productivity': 0.75,
@@ -121,7 +122,9 @@ class SyntheticDataGenerator:
             'development': {'value_score_range': (0.5, 0.9), 'cognitive_load': 0.8},
             'meeting': {'value_score_range': (0.2, 0.6), 'cognitive_load': 0.4},
             'communication': {'value_score_range': (0.2, 0.5), 'cognitive_load': 0.3},
-            'learning': {'value_score_range': (0.6, 0.9), 'cognitive_load': 0.8}
+            'learning': {'value_score_range': (0.6, 0.9), 'cognitive_load': 0.8},
+            'customer_interaction': {'value_score_range': (0.6, 0.9), 'cognitive_load': 0.6},
+            'case_resolution': {'value_score_range': (0.7, 0.95), 'cognitive_load': 0.7}
         }
     
     def generate_user_profiles(self, count: int = 50) -> List[UserProfile]:
@@ -130,8 +133,8 @@ class SyntheticDataGenerator:
         profiles = []
         
         for user_id in range(1, count + 1):
-            # Select persona (with realistic distribution)
-            persona_weights = {'manager': 0.2, 'analyst': 0.3, 'developer': 0.35, 'designer': 0.15}
+            # Select persona (with realistic distribution - focus on AI-receptive personas)
+            persona_weights = {'customer_support': 0.25, 'analyst': 0.35, 'developer': 0.3, 'designer': 0.1}
             persona = np.random.choice(list(persona_weights.keys()), p=list(persona_weights.values()))
             
             config = self.persona_configs[persona]
@@ -314,13 +317,13 @@ class SyntheticDataGenerator:
         apps = config['primary_apps']
         
         # Base probabilities
-        if profile.persona_type == 'manager':
-            if 8 <= hour <= 9 or 17 <= hour <= 18:
-                # Email heavy times
-                return [0.6, 0.2, 0.1, 0.1] if len(apps) == 4 else [1.0]
-            elif 10 <= hour <= 12 or 14 <= hour <= 16:
-                # Meeting times
-                return [0.3, 0.5, 0.1, 0.1] if len(apps) == 4 else [1.0]
+        if profile.persona_type == 'customer_support':
+            if 9 <= hour <= 11 or 14 <= hour <= 16:
+                # Peak customer interaction times - heavy support platform usage
+                return [0.5, 0.2, 0.2, 0.1] if len(apps) == 4 else [1.0]  # Zendesk, Intercom, Claude, Slack
+            elif 12 <= hour <= 13:
+                # Lunch break - catch up on AI tools and optimization
+                return [0.3, 0.2, 0.4, 0.1] if len(apps) == 4 else [1.0]  # More Claude usage
             else:
                 return [0.4, 0.3, 0.2, 0.1] if len(apps) == 4 else [1.0]
         
@@ -367,9 +370,12 @@ class SyntheticDataGenerator:
             elif profile.persona_type == 'designer':
                 categories = ['creative', 'analysis', 'communication']
                 weights = [0.6, 0.2, 0.2]
-            else:  # manager
-                categories = ['meeting', 'admin', 'analysis']
-                weights = [0.5, 0.3, 0.2]
+            elif profile.persona_type == 'customer_support':
+                categories = ['customer_interaction', 'case_resolution', 'communication']
+                weights = [0.6, 0.3, 0.1]
+            else:  # other personas
+                categories = ['admin', 'communication', 'analysis']
+                weights = [0.4, 0.4, 0.2]
         elif 13 <= hour <= 14:
             # Post-lunch - lighter tasks
             categories = ['communication', 'admin', 'learning']
@@ -385,9 +391,12 @@ class SyntheticDataGenerator:
             elif profile.persona_type == 'designer':
                 categories = ['creative', 'meeting', 'communication']
                 weights = [0.5, 0.3, 0.2]
-            else:  # manager
-                categories = ['meeting', 'admin', 'analysis']
-                weights = [0.6, 0.2, 0.2]
+            elif profile.persona_type == 'customer_support':
+                categories = ['customer_interaction', 'case_resolution', 'admin']
+                weights = [0.5, 0.3, 0.2]
+            else:  # other personas
+                categories = ['admin', 'meeting', 'analysis']
+                weights = [0.4, 0.4, 0.2]
         else:
             # End of day - admin and wrap-up
             categories = ['admin', 'communication', 'meeting']
@@ -416,8 +425,8 @@ class SyntheticDataGenerator:
         
         # Base acceptance rates by persona (learned from real patterns)
         base_acceptance_rates = {
-            'manager': 0.57,
-            'analyst': 0.875,
+            'customer_support': 0.85,  # High acceptance - AI-savvy and efficiency-focused
+            'analyst': 0.875,  # Highest acceptance - data-driven mindset
             'developer': 0.78,
             'designer': 1.0
         }
@@ -469,7 +478,7 @@ class SyntheticDataGenerator:
         else:
             # Persona-specific dismissal reasons
             dismissal_reasons = {
-                'manager': ['busy', 'in_meeting', 'not_now', 'too_frequent'],
+                'customer_support': ['with_customer', 'urgent_case', 'in_call', 'peak_hours'],
                 'analyst': ['not_relevant', 'already_doing', 'unclear', 'not_now'],
                 'developer': ['too_frequent', 'in_flow', 'not_now', 'interrupting'],
                 'designer': ['busy', 'not_relevant', 'unclear', 'not_now']
@@ -515,15 +524,15 @@ class SyntheticDataGenerator:
         for idx in extreme_days:
             if np.random.random() < 0.5:
                 # High productivity day
-                df_modified.loc[idx, 'focus_session_duration'] *= np.random.uniform(1.5, 2.0)
+                df_modified.loc[idx, 'focus_session_duration'] = int(df_modified.loc[idx, 'focus_session_duration'] * np.random.uniform(1.5, 2.0))
                 df_modified.loc[idx, 'core_work_percentage'] *= np.random.uniform(1.3, 1.8)
-                df_modified.loc[idx, 'interruption_count'] *= np.random.uniform(0.2, 0.5)
+                df_modified.loc[idx, 'interruption_count'] = int(df_modified.loc[idx, 'interruption_count'] * np.random.uniform(0.2, 0.5))
                 df_modified.loc[idx, 'value_score'] *= np.random.uniform(1.2, 1.5)
             else:
                 # Low productivity day (sick, distracted, etc.)
-                df_modified.loc[idx, 'focus_session_duration'] *= np.random.uniform(0.3, 0.6)
+                df_modified.loc[idx, 'focus_session_duration'] = int(df_modified.loc[idx, 'focus_session_duration'] * np.random.uniform(0.3, 0.6))
                 df_modified.loc[idx, 'core_work_percentage'] *= np.random.uniform(0.2, 0.5)
-                df_modified.loc[idx, 'interruption_count'] *= np.random.uniform(1.5, 3.0)
+                df_modified.loc[idx, 'interruption_count'] = int(df_modified.loc[idx, 'interruption_count'] * np.random.uniform(1.5, 3.0))
                 df_modified.loc[idx, 'cognitive_load_score'] *= np.random.uniform(1.2, 1.5)
         
         # Add some data quality issues (missing values, outliers)
@@ -579,7 +588,7 @@ class SyntheticDataGenerator:
         profiles_data = [asdict(profile) for profile in user_profiles]
         profiles_path = self.output_dir / "user_profiles.json"
         with open(profiles_path, 'w') as f:
-            json.dump(profiles_data, f, indent=2)
+            json.dump(profiles_data, f, indent=2, default=str)
         
         # Save telemetry data
         telemetry_path = self.output_dir / "synthetic_telemetry.csv"
