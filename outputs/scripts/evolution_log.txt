@@ -1,0 +1,613 @@
+2025-08-05 22:19:17,026 - INFO - Starting AI Coach Evolution with 50 iterations
+2025-08-05 22:19:17,026 - INFO - Initializing population...
+2025-08-05 22:19:29,337 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:19:29,347 - INFO - Created variation 1: coach_variation_1.py
+2025-08-05 22:19:39,094 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:19:39,096 - INFO - Created variation 2: coach_variation_2.py
+2025-08-05 22:19:53,188 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:19:53,195 - INFO - Created variation 3: coach_variation_3.py
+2025-08-05 22:20:01,925 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:20:01,928 - INFO - Created variation 4: coach_variation_4.py
+2025-08-05 22:20:11,190 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:20:11,192 - INFO - Created variation 5: coach_variation_5.py
+2025-08-05 22:20:28,246 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:20:28,252 - INFO - Created variation 6: coach_variation_6.py
+2025-08-05 22:20:38,014 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:20:38,016 - INFO - Created variation 7: coach_variation_7.py
+2025-08-05 22:20:54,981 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:20:54,986 - INFO - Created variation 8: coach_variation_8.py
+2025-08-05 22:21:05,356 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:05,359 - INFO - Created variation 9: coach_variation_9.py
+2025-08-05 22:21:14,249 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:14,256 - INFO - Created variation 10: coach_variation_10.py
+2025-08-05 22:21:23,134 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:23,137 - INFO - Created variation 11: coach_variation_11.py
+2025-08-05 22:21:35,265 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:35,269 - INFO - Created variation 12: coach_variation_12.py
+2025-08-05 22:21:45,544 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:45,547 - INFO - Created variation 13: coach_variation_13.py
+2025-08-05 22:21:54,253 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:21:54,259 - INFO - Created variation 14: coach_variation_14.py
+2025-08-05 22:22:06,123 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:22:06,126 - INFO - Created variation 15: coach_variation_15.py
+2025-08-05 22:22:15,409 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:22:15,415 - INFO - Created variation 16: coach_variation_16.py
+2025-08-05 22:22:28,714 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:22:28,722 - INFO - Created variation 17: coach_variation_17.py
+2025-08-05 22:22:38,575 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:22:38,580 - INFO - Created variation 18: coach_variation_18.py
+2025-08-05 22:22:48,375 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:22:48,383 - INFO - Created variation 19: coach_variation_19.py
+2025-08-05 22:22:48,400 - INFO - 
+============================================================
+2025-08-05 22:22:48,400 - INFO - GENERATION 1/50
+2025-08-05 22:22:48,401 - INFO - ============================================================
+2025-08-05 22:22:48,401 - INFO - Evaluating coach 1/20: ai_coach.py
+2025-08-05 22:22:48,401 - INFO - Evaluating coach: ai_coach.py
+2025-08-05 22:22:48,778 - INFO - Applied ultra-evolved intelligence to manager: 1478 generations, 1033 mutations, 100.0% acceptance rate
+2025-08-05 22:22:48,779 - INFO - Applied ultra-evolved intelligence to analyst: 1009 generations, 731 mutations, 100.0% acceptance rate
+2025-08-05 22:22:48,779 - INFO - Applied ultra-evolved intelligence to developer: 1424 generations, 1055 mutations, 95.0% acceptance rate
+2025-08-05 22:22:48,779 - INFO - Applied ultra-evolved intelligence to designer: 2 generations, 3 mutations, 100.0% acceptance rate
+2025-08-05 22:22:48,779 - INFO - Advanced variance system initialized with persona-specific sensitivities
+2025-08-05 22:22:48,780 - INFO - Loaded learning state from unknown
+2025-08-05 22:22:48,780 - INFO - AI Coach initialized with ULTRA-EVOLVED intelligence from massive dataset learning
+2025-08-05 22:22:48,785 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,786 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,788 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,788 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,789 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,790 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,791 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,791 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,792 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,792 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,792 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,793 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,794 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,794 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,794 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,794 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,795 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,795 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,795 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,795 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,796 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,796 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,797 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,797 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,797 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,797 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,798 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,798 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,799 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,799 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,800 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,800 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,800 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,800 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,801 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,801 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,802 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,802 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,802 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,802 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,803 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,803 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,804 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,804 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,804 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,804 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,805 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,805 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,805 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,806 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,807 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,807 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,808 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,808 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,808 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,809 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,809 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,809 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,810 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,810 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,810 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,811 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,811 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,811 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,812 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,812 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,813 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,813 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,814 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,814 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,815 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,815 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,815 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,816 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,817 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,817 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,818 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,818 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,819 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,819 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,819 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,820 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,820 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,820 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,821 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,821 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,821 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,821 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,822 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,823 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,824 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,825 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,826 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,826 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,827 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,827 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,827 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,828 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,828 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,829 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,831 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,831 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,832 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,832 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,832 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,832 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,833 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,833 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,833 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,833 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,834 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,834 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,834 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,836 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,837 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,837 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,840 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,840 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,841 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,841 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,842 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,842 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,843 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,844 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,844 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,844 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,845 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,845 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,846 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,846 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,847 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,847 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,848 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,848 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,849 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,849 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,850 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,850 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,850 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,850 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,851 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,851 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,852 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,852 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,854 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,854 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,856 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,856 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,857 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,857 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,859 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,859 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,861 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,861 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,863 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,863 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,867 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,867 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,868 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,869 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,870 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,870 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,873 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,873 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,875 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,875 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,877 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,877 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,879 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,879 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,881 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,881 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,883 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,883 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,885 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,885 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,886 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,887 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,887 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,887 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,890 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,890 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,891 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,891 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,892 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,892 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,893 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,893 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,895 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,895 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,897 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,897 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,899 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,899 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,901 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,901 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,903 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,903 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,904 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,904 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,905 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,905 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,906 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,906 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,906 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,906 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,908 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,908 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,910 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,910 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,911 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,911 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,912 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,912 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,913 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,913 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,913 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,913 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,914 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,914 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,914 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,914 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,915 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,915 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,915 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,915 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,917 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,917 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,918 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,918 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,918 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,918 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,919 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,919 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,920 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,920 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,922 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,922 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,924 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,924 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,925 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,925 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,925 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,925 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,926 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,926 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,927 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,927 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,928 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,929 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,930 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,930 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,931 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,931 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,933 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,933 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,934 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,934 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,936 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,936 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,937 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,937 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,939 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,939 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,940 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,940 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,941 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,941 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,941 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,941 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,942 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,942 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,944 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,944 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,945 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,945 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,947 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,947 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,948 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,949 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,950 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,950 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,951 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,951 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,953 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,953 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,955 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,955 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,957 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,957 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,959 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,959 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,960 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,960 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,961 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,962 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,963 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,963 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,964 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,964 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,964 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,965 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,965 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,966 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,967 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,967 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,968 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,968 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,970 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,970 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,972 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,972 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,974 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,974 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,975 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,976 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,977 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,977 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,978 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,978 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,979 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,979 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,979 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,979 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,980 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,980 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,980 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,980 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,981 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,981 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,981 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,981 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,982 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,982 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,982 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,982 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,983 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,983 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,983 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,983 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,984 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,984 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,985 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,985 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,985 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,985 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,986 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,986 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,986 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,986 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,987 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,987 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,987 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,987 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,988 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,988 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,988 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,988 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,989 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,989 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,991 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,991 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,991 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,991 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,992 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,992 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,992 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,992 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,993 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,993 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,993 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,993 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,994 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,994 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,994 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,994 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,995 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,995 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,995 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,995 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,996 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,996 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,997 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,997 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,997 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,997 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,998 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,998 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,999 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,999 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:48,999 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:48,999 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,000 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,000 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,000 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,000 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,001 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,001 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,001 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,001 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,002 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,002 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,002 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,002 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,003 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,003 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,004 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,005 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,006 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,006 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,007 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,008 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,009 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,009 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,009 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,010 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,010 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,011 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,011 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,011 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,012 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,012 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,012 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,012 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,013 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,013 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,013 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,013 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,014 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,014 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,014 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,014 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,015 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,015 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,015 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,015 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,016 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,016 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,016 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,016 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,017 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,017 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,017 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,017 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,018 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,018 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,018 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,018 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,019 - ERROR - Context extraction failed: fromisoformat: argument must be str
+2025-08-05 22:22:49,019 - ERROR - Coaching analysis failed: 'window_switches'
+2025-08-05 22:22:49,020 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,020 - INFO - Evaluation completed. Composite fitness: -1.0000
+2025-08-05 22:22:49,020 - INFO - Coach 1 fitness: -1.0000
+2025-08-05 22:22:49,020 - INFO - Evaluating coach 2/20: coach_variation_1.py
+2025-08-05 22:22:49,020 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_1.py
+2025-08-05 22:22:49,021 - ERROR - Evaluation error: name 'Dict' is not defined
+2025-08-05 22:22:49,021 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,021 - INFO - Coach 2 fitness: -1.0000
+2025-08-05 22:22:49,021 - INFO - Evaluating coach 3/20: coach_variation_2.py
+2025-08-05 22:22:49,021 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_2.py
+2025-08-05 22:22:49,021 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_2.py, line 1)
+2025-08-05 22:22:49,021 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,021 - INFO - Coach 3 fitness: -1.0000
+2025-08-05 22:22:49,021 - INFO - Evaluating coach 4/20: coach_variation_3.py
+2025-08-05 22:22:49,021 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_3.py
+2025-08-05 22:22:49,022 - ERROR - Evaluation error: name 'self' is not defined
+2025-08-05 22:22:49,022 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,022 - INFO - Coach 4 fitness: -1.0000
+2025-08-05 22:22:49,022 - INFO - Evaluating coach 5/20: coach_variation_4.py
+2025-08-05 22:22:49,022 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_4.py
+2025-08-05 22:22:49,022 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_4.py, line 1)
+2025-08-05 22:22:49,023 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,023 - INFO - Coach 5 fitness: -1.0000
+2025-08-05 22:22:49,023 - INFO - Evaluating coach 6/20: coach_variation_5.py
+2025-08-05 22:22:49,023 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_5.py
+2025-08-05 22:22:49,024 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_5.py, line 1)
+2025-08-05 22:22:49,024 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,024 - INFO - Coach 6 fitness: -1.0000
+2025-08-05 22:22:49,024 - INFO - Evaluating coach 7/20: coach_variation_6.py
+2025-08-05 22:22:49,024 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_6.py
+2025-08-05 22:22:49,025 - ERROR - Evaluation error: name 'Dict' is not defined
+2025-08-05 22:22:49,025 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,025 - INFO - Coach 7 fitness: -1.0000
+2025-08-05 22:22:49,025 - INFO - Evaluating coach 8/20: coach_variation_7.py
+2025-08-05 22:22:49,025 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_7.py
+2025-08-05 22:22:49,025 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_7.py, line 1)
+2025-08-05 22:22:49,026 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,026 - INFO - Coach 8 fitness: -1.0000
+2025-08-05 22:22:49,026 - INFO - Evaluating coach 9/20: coach_variation_8.py
+2025-08-05 22:22:49,026 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_8.py
+2025-08-05 22:22:49,026 - ERROR - Evaluation error: name 'self' is not defined
+2025-08-05 22:22:49,026 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,027 - INFO - Coach 9 fitness: -1.0000
+2025-08-05 22:22:49,027 - INFO - Evaluating coach 10/20: coach_variation_9.py
+2025-08-05 22:22:49,027 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_9.py
+2025-08-05 22:22:49,027 - ERROR - Evaluation error: unterminated string literal (detected at line 35) (coach_variation_9.py, line 35)
+2025-08-05 22:22:49,027 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,027 - INFO - Coach 10 fitness: -1.0000
+2025-08-05 22:22:49,027 - INFO - Evaluating coach 11/20: coach_variation_10.py
+2025-08-05 22:22:49,027 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_10.py
+2025-08-05 22:22:49,028 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_10.py, line 1)
+2025-08-05 22:22:49,028 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,028 - INFO - Coach 11 fitness: -1.0000
+2025-08-05 22:22:49,028 - INFO - Evaluating coach 12/20: coach_variation_11.py
+2025-08-05 22:22:49,028 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_11.py
+2025-08-05 22:22:49,028 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_11.py, line 1)
+2025-08-05 22:22:49,028 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,028 - INFO - Coach 12 fitness: -1.0000
+2025-08-05 22:22:49,028 - INFO - Evaluating coach 13/20: coach_variation_12.py
+2025-08-05 22:22:49,029 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_12.py
+2025-08-05 22:22:49,029 - ERROR - Evaluation error: name 'self' is not defined
+2025-08-05 22:22:49,029 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,029 - INFO - Coach 13 fitness: -1.0000
+2025-08-05 22:22:49,029 - INFO - Evaluating coach 14/20: coach_variation_13.py
+2025-08-05 22:22:49,029 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_13.py
+2025-08-05 22:22:49,029 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_13.py, line 1)
+2025-08-05 22:22:49,030 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,030 - INFO - Coach 14 fitness: -1.0000
+2025-08-05 22:22:49,030 - INFO - Evaluating coach 15/20: coach_variation_14.py
+2025-08-05 22:22:49,030 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_14.py
+2025-08-05 22:22:49,030 - ERROR - Evaluation error: unterminated string literal (detected at line 28) (coach_variation_14.py, line 28)
+2025-08-05 22:22:49,030 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,030 - INFO - Coach 15 fitness: -1.0000
+2025-08-05 22:22:49,030 - INFO - Evaluating coach 16/20: coach_variation_15.py
+2025-08-05 22:22:49,030 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_15.py
+2025-08-05 22:22:49,031 - ERROR - Evaluation error: name 'Dict' is not defined
+2025-08-05 22:22:49,031 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,031 - INFO - Coach 16 fitness: -1.0000
+2025-08-05 22:22:49,031 - INFO - Evaluating coach 17/20: coach_variation_16.py
+2025-08-05 22:22:49,031 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_16.py
+2025-08-05 22:22:49,031 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_16.py, line 1)
+2025-08-05 22:22:49,031 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,031 - INFO - Coach 17 fitness: -1.0000
+2025-08-05 22:22:49,032 - INFO - Evaluating coach 18/20: coach_variation_17.py
+2025-08-05 22:22:49,032 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_17.py
+2025-08-05 22:22:49,032 - ERROR - Evaluation error: name 'Dict' is not defined
+2025-08-05 22:22:49,033 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,033 - INFO - Coach 18 fitness: -1.0000
+2025-08-05 22:22:49,033 - INFO - Evaluating coach 19/20: coach_variation_18.py
+2025-08-05 22:22:49,033 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_18.py
+2025-08-05 22:22:49,033 - ERROR - Evaluation error: invalid syntax (coach_variation_18.py, line 1)
+2025-08-05 22:22:49,033 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,033 - INFO - Coach 19 fitness: -1.0000
+2025-08-05 22:22:49,033 - INFO - Evaluating coach 20/20: coach_variation_19.py
+2025-08-05 22:22:49,033 - INFO - Evaluating coach: outputs/evolved_coaches/coach_variation_19.py
+2025-08-05 22:22:49,033 - ERROR - Evaluation error: unterminated string literal (detected at line 1) (coach_variation_19.py, line 1)
+2025-08-05 22:22:49,033 - INFO - Results logged to /Users/stanhus/Documents/work/ai_coach/outputs/coaching_evaluation_results.json
+2025-08-05 22:22:49,033 - INFO - Coach 20 fitness: -1.0000
+2025-08-05 22:22:49,033 - INFO - Generation 1 Results:
+2025-08-05 22:22:49,033 - INFO -   Best Fitness: -1.0000
+2025-08-05 22:22:49,034 - INFO -   Average Fitness: -1.0000
+2025-08-05 22:22:49,034 - INFO -   Best Coach: ai_coach.py
+2025-08-05 22:22:49,034 - INFO - Saved best coach from generation 1: best_coach_gen_1.py
+2025-08-05 22:22:49,034 - INFO - Generating generation 2...
+2025-08-05 22:22:53,809 - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1.04s.
+2025-08-05 22:22:54,871 - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 1.93s.
+2025-08-05 22:22:56,826 - WARNING - Transient error StatusCode.UNAVAILABLE encountered while exporting traces to localhost:4317, retrying in 4.69s.
+2025-08-05 22:23:01,528 - ERROR - Failed to export traces to localhost:4317, error code: StatusCode.UNAVAILABLE
+2025-08-05 22:23:10,167 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-08-05 22:23:32,699 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"

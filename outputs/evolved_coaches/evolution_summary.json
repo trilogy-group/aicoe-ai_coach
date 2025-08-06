@@ -1,0 +1,809 @@
+{
+  "total_generations": 100,
+  "best_overall_fitness": -1.0,
+  "final_best_coach": "ai_coach.py",
+  "improvement_rate": 0.0,
+  "generation_results": [
+    {
+      "generation": 1,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:27:14.813529"
+    },
+    {
+      "generation": 2,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:31:37.198238"
+    },
+    {
+      "generation": 3,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:35:45.485527"
+    },
+    {
+      "generation": 4,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:40:21.346619"
+    },
+    {
+      "generation": 5,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:45:06.760436"
+    },
+    {
+      "generation": 6,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:49:39.644273"
+    },
+    {
+      "generation": 7,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:54:13.464222"
+    },
+    {
+      "generation": 8,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T22:59:30.252302"
+    },
+    {
+      "generation": 9,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:04:38.907592"
+    },
+    {
+      "generation": 10,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:09:25.538699"
+    },
+    {
+      "generation": 11,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:14:00.562372"
+    },
+    {
+      "generation": 12,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:18:31.547589"
+    },
+    {
+      "generation": 13,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:24:01.016724"
+    },
+    {
+      "generation": 14,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:29:07.662137"
+    },
+    {
+      "generation": 15,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:34:23.069585"
+    },
+    {
+      "generation": 16,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:39:37.478059"
+    },
+    {
+      "generation": 17,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:44:12.244501"
+    },
+    {
+      "generation": 18,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:48:41.836363"
+    },
+    {
+      "generation": 19,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:53:00.751501"
+    },
+    {
+      "generation": 20,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-05T23:57:19.964624"
+    },
+    {
+      "generation": 21,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:01:49.790684"
+    },
+    {
+      "generation": 22,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:06:01.029728"
+    },
+    {
+      "generation": 23,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:10:28.776045"
+    },
+    {
+      "generation": 24,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:14:58.297102"
+    },
+    {
+      "generation": 25,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:19:23.477086"
+    },
+    {
+      "generation": 26,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:23:33.141469"
+    },
+    {
+      "generation": 27,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:28:05.239563"
+    },
+    {
+      "generation": 28,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:32:30.017203"
+    },
+    {
+      "generation": 29,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:37:21.176285"
+    },
+    {
+      "generation": 30,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:41:46.996020"
+    },
+    {
+      "generation": 31,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:46:45.893003"
+    },
+    {
+      "generation": 32,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:51:06.597340"
+    },
+    {
+      "generation": 33,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T00:55:37.899452"
+    },
+    {
+      "generation": 34,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:00:06.696626"
+    },
+    {
+      "generation": 35,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:03:59.664316"
+    },
+    {
+      "generation": 36,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:08:52.031499"
+    },
+    {
+      "generation": 37,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:12:58.588068"
+    },
+    {
+      "generation": 38,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:17:08.376574"
+    },
+    {
+      "generation": 39,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:21:29.747296"
+    },
+    {
+      "generation": 40,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:25:56.094030"
+    },
+    {
+      "generation": 41,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:30:46.571652"
+    },
+    {
+      "generation": 42,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:35:00.939108"
+    },
+    {
+      "generation": 43,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:39:39.955640"
+    },
+    {
+      "generation": 44,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:43:57.315451"
+    },
+    {
+      "generation": 45,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:48:27.526969"
+    },
+    {
+      "generation": 46,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:52:54.383706"
+    },
+    {
+      "generation": 47,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T01:57:21.838943"
+    },
+    {
+      "generation": 48,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:01:11.972428"
+    },
+    {
+      "generation": 49,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:05:49.550359"
+    },
+    {
+      "generation": 50,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:10:22.838217"
+    },
+    {
+      "generation": 51,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:14:55.368869"
+    },
+    {
+      "generation": 52,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:19:18.510000"
+    },
+    {
+      "generation": 53,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:23:35.700599"
+    },
+    {
+      "generation": 54,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:27:32.510120"
+    },
+    {
+      "generation": 55,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:31:51.558571"
+    },
+    {
+      "generation": 56,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:36:28.715641"
+    },
+    {
+      "generation": 57,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:40:35.477415"
+    },
+    {
+      "generation": 58,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:45:26.338332"
+    },
+    {
+      "generation": 59,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:50:29.931223"
+    },
+    {
+      "generation": 60,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:54:42.199553"
+    },
+    {
+      "generation": 61,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T02:58:55.804191"
+    },
+    {
+      "generation": 62,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:03:38.025167"
+    },
+    {
+      "generation": 63,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:08:59.250523"
+    },
+    {
+      "generation": 64,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:13:46.697921"
+    },
+    {
+      "generation": 65,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:18:29.529991"
+    },
+    {
+      "generation": 66,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:22:50.095554"
+    },
+    {
+      "generation": 67,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:27:15.691982"
+    },
+    {
+      "generation": 68,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:31:43.726159"
+    },
+    {
+      "generation": 69,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:36:16.127689"
+    },
+    {
+      "generation": 70,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:41:07.495508"
+    },
+    {
+      "generation": 71,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:45:59.708704"
+    },
+    {
+      "generation": 72,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:50:00.906236"
+    },
+    {
+      "generation": 73,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:54:30.499391"
+    },
+    {
+      "generation": 74,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T03:59:07.681063"
+    },
+    {
+      "generation": 75,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:03:18.282777"
+    },
+    {
+      "generation": 76,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:07:53.253914"
+    },
+    {
+      "generation": 77,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:12:32.403935"
+    },
+    {
+      "generation": 78,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:16:35.857235"
+    },
+    {
+      "generation": 79,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:21:36.321682"
+    },
+    {
+      "generation": 80,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:25:58.527779"
+    },
+    {
+      "generation": 81,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:31:05.856065"
+    },
+    {
+      "generation": 82,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:35:49.456767"
+    },
+    {
+      "generation": 83,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:39:54.028549"
+    },
+    {
+      "generation": 84,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:44:29.863882"
+    },
+    {
+      "generation": 85,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:48:47.036755"
+    },
+    {
+      "generation": 86,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:53:18.669647"
+    },
+    {
+      "generation": 87,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T04:57:57.130987"
+    },
+    {
+      "generation": 88,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:02:17.421757"
+    },
+    {
+      "generation": 89,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:06:28.980737"
+    },
+    {
+      "generation": 90,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:11:15.371790"
+    },
+    {
+      "generation": 91,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:15:23.894105"
+    },
+    {
+      "generation": 92,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:19:45.554634"
+    },
+    {
+      "generation": 93,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:24:10.203533"
+    },
+    {
+      "generation": 94,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:29:08.822190"
+    },
+    {
+      "generation": 95,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:33:38.579716"
+    },
+    {
+      "generation": 96,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:38:06.773352"
+    },
+    {
+      "generation": 97,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:43:29.771025"
+    },
+    {
+      "generation": 98,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:48:13.351965"
+    },
+    {
+      "generation": 99,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:52:22.030638"
+    },
+    {
+      "generation": 100,
+      "best_fitness": -1.0,
+      "avg_fitness": -1.0,
+      "population_size": 15,
+      "best_coach": "ai_coach.py",
+      "timestamp": "2025-08-06T05:56:59.472117"
+    }
+  ],
+  "evolution_completed": "2025-08-06T06:01:15.641212"
+}

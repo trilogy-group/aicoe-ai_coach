@@ -1,0 +1,828 @@
+{
+  "cycles_completed": 200,
+  "current_best_fitness": -1.0,
+  "current_best_path": "ai_coach.py",
+  "cycle_history": [
+    {
+      "timestamp": "2025-08-06T04:48:26.652539",
+      "cycle_time": 114.25010871887207,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T04:50:21.823984",
+      "cycle_time": 113.16085624694824,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T04:52:10.422580",
+      "cycle_time": 106.58738899230957,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T04:54:01.553361",
+      "cycle_time": 109.120276927948,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T04:55:54.038845",
+      "cycle_time": 110.47490692138672,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T04:57:54.890980",
+      "cycle_time": 118.84260821342468,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T05:00:04.695323",
+      "cycle_time": 127.80365920066833,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T05:02:01.688503",
+      "cycle_time": 114.97925615310669,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T05:03:59.995191",
+      "cycle_time": 116.2945830821991,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    },
+    {
+      "timestamp": "2025-08-06T05:06:06.052263",
+      "cycle_time": 124.04647612571716,
+      "best_fitness": -1.0,
+      "best_focus": "original",
+      "best_path": "ai_coach.py",
+      "all_results": [
+        {
+          "path": "ai_coach.py",
+          "focus": "original",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_relevance.py",
+          "focus": "relevance",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_actionability.py",
+          "focus": "actionability",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_psychology.py",
+          "focus": "psychology",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_personalization.py",
+          "focus": "personalization",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        },
+        {
+          "path": "outputs/rapid_evolution/rapid_variant_timing.py",
+          "focus": "timing",
+          "metrics": {
+            "composite_fitness": -1.0,
+            "nudge_quality": 0.0,
+            "behavioral_change": 0.0,
+            "user_satisfaction": 0.0,
+            "total_interactions": 0
+          },
+          "fitness": -1.0
+        }
+      ],
+      "improvement": 0.0
+    }
+  ],
+  "total_improvement": 0.0
+}

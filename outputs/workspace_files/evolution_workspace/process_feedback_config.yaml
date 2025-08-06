@@ -1,0 +1,6 @@
+target_file: "staging/process_feedback_function/target.py"
+evaluator_file: "evaluators/process_feedback_evaluator.py"
+training_data_file: "staging/process_feedback_function/training_data.json"
+output_dir: "results/process_feedback"
+evolution_params: {"population_size": 10, "generations": 50, "mutation_rate": 0.1, "crossover_rate": 0.8}
+llm_config: {"model": "claude-3-sonnet-20240229", "temperature": 0.7, "max_tokens": 4000}
