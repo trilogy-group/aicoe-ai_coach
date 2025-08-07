@@ -1,11 +1,56 @@
-.env
-.DS_Store
-.env.local
-__pycache__
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
 venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+
+# Claude
 .claude/
-backups/
+
+# Project specific - exclude large generated files
+outputs/evolved_coaches/
+outputs/advanced_training/
+outputs/evolution/
+outputs/evolution_results/
+outputs/legacy_files/
+outputs/rapid_evolution/
 outputs/*.csv
-outputs/*.json
 outputs/*.jsonl
+outputs/*.json
 outputs/logs/
+outputs/interaction_batch_*.jsonl
+outputs/telemetry_batch_*.csv
+outputs/massive_*.csv
+outputs/massive_*.jsonl
+outputs/massive_*.json
+
+# Keep only essential output files
+!outputs/ai_coach_initial.py
+!outputs/ai_coach_learning_state.json
+
+# OpenEvolve (optional evolution tool)
+openevolve-btc-algo/
+
+# Test files
+test_*.py
+quick_test.py
+*_test.py
+
+# Backups
+backups/

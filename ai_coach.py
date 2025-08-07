@@ -44,10 +44,30 @@ import json
 import logging
 import pickle
 import numpy as np
+import subprocess
+import time
+import psutil
+import signal
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any, Tuple
 from pathlib import Path
-from collections import defaultdict
+from collections import defaultdict, deque
+
+try:
+    from pynput import mouse, keyboard
+    from pynput.mouse import Listener as MouseListener
+    from pynput.keyboard import Listener as KeyboardListener
+    PYNPUT_AVAILABLE = True
+except ImportError:
+    PYNPUT_AVAILABLE = False
+    print("⚠️  pynput not installed. Install with: pip install pynput")
+
+try:
+    import plyer
+    NOTIFICATIONS_AVAILABLE = True
+except ImportError:
+    NOTIFICATIONS_AVAILABLE = False
+    print("⚠️  plyer not installed for notifications. Install with: pip install plyer")
 
 # Configure logging
 logging.basicConfig(
@@ -473,27 +493,6 @@ class NotificationManager:
         
         return True
     
-    def record_notification(self, user_id: str):
-        """Record that a notification was sent"""
-        self.last_notification_time[user_id] = datetime.now()
-    
-    def format_notification(self, strategy: Dict, context: Dict) -> Dict:
-        """Format coaching strategy as notification"""
-        return {
-            'message': strategy['message'],
-            'priority': strategy['priority'],
-            'action': strategy['action'],
-            'suggested_duration': strategy['duration'],
-            'context': {
-                'energy_level': round(context['energy_level'], 2),
-                'stress_level': round(context['stress_level'], 2),
-                'productivity_score': round(context['productivity_score'], 2),
-                'focus_quality': round(context['focus_quality'], 2)
-            },
-            'timestamp': datetime.now().isoformat()
-        }
-
-
 class UserModel:
     """Individual user behavior modeling with learning capabilities"""
     
@@ -1086,6 +1085,744 @@ async def demonstrate_ai_capabilities():
     return coach
 
 
+# Enhanced Telemetry Collection Classes
+class ActivityTracker:
+    """Tracks keyboard and mouse activity"""
+    
+    def __init__(self):
+        self.keyboard_events = deque(maxlen=1000)
+        self.mouse_events = deque(maxlen=1000)
+        self.typing_speed = deque(maxlen=100)
+        self.last_activity = time.time()
+        self.is_active = False
+        
+    def on_key_press(self, key):
+        now = time.time()
+        self.keyboard_events.append(now)
+        self.last_activity = now
+        self.is_active = True
+        
+        if len(self.keyboard_events) >= 2:
+            recent_events = [t for t in self.keyboard_events if now - t <= 60]
+            if len(recent_events) > 1:
+                wpm = len(recent_events) / 5
+                self.typing_speed.append(wpm)
+    
+    def on_mouse_move(self, x, y):
+        now = time.time()
+        self.mouse_events.append(now)
+        self.last_activity = now
+        self.is_active = True
+    
+    def on_mouse_click(self, x, y, button, pressed):
+        if pressed:
+            now = time.time()
+            self.mouse_events.append(now)
+            self.last_activity = now
+            self.is_active = True
+    
+    def get_activity_metrics(self) -> Dict[str, float]:
+        now = time.time()
+        recent_keys = [t for t in self.keyboard_events if now - t <= 60]
+        recent_mouse = [t for t in self.mouse_events if now - t <= 60]
+        
+        keystrokes_per_min = len(recent_keys)
+        mouse_events_per_min = len(recent_mouse)
+        idle_seconds = now - self.last_activity if self.last_activity else 0
+        avg_typing_speed = sum(self.typing_speed) / len(self.typing_speed) if self.typing_speed else 0
+        
+        return {
+            'keystrokes_per_min': keystrokes_per_min,
+            'mouse_events_per_min': mouse_events_per_min,
+            'idle_seconds': idle_seconds,
+            'typing_speed_wpm': avg_typing_speed,
+            'is_active': idle_seconds < 30
+        }
+
+
+class WindowTracker:
+    """Enhanced application and window tracking with browser tabs"""
+    
+    def __init__(self):
+        self.window_history = deque(maxlen=1000)
+        self.current_window = None
+        self.current_app = None
+        self.window_usage = defaultdict(float)
+        self.window_switches = 0
+        self.last_check = time.time()
+        self.productivity_keywords = {
+            'productive': ['code', 'docs', 'document', 'spreadsheet', 'presentation', 'terminal', 'editor', 'development'],
+            'communication': ['slack', 'email', 'zoom', 'teams', 'discord', 'messages'],
+            'research': ['browser', 'chrome', 'safari', 'firefox', 'research', 'documentation'],
+            'entertainment': ['youtube', 'netflix', 'spotify', 'music', 'video', 'game', 'social', 'twitter', 'instagram']
+        }
+    
+    def get_window_info(self) -> Dict[str, Optional[str]]:
+        """Get detailed window information including title"""
+        try:
+            script = '''
+            tell application "System Events"
+                set frontApp to name of first application process whose frontmost is true
+                set windowTitle to ""
+                try
+                    if frontApp is not "Finder" then
+                        set windowTitle to title of front window of application process frontApp
+                    end if
+                end try
+                return frontApp & "|" & windowTitle
+            end tell
+            '''
+            result = subprocess.run(['osascript', '-e', script], 
+                                  capture_output=True, text=True, timeout=5)
+            
+            if result.returncode == 0:
+                parts = result.stdout.strip().split('|', 1)
+                app_name = parts[0] if parts else None
+                window_title = parts[1] if len(parts) > 1 else ""
+                
+                return {
+                    'app_name': app_name,
+                    'window_title': window_title,
+                    'full_context': f"{app_name}: {window_title}" if window_title else app_name
+                }
+        
+        except Exception as e:
+            print(f"Error getting window info: {e}")
+        
+        return {'app_name': None, 'window_title': '', 'full_context': ''}
+    
+    def get_browser_tab_info(self, app_name: str) -> Optional[Dict[str, Any]]:
+        """Get current browser tab information"""
+        if not app_name:
+            return None
+        
+        app_lower = app_name.lower()
+        
+        try:
+            if 'chrome' in app_lower or 'google chrome' in app_lower:
+                return self._get_chrome_tab()
+            elif 'safari' in app_lower:
+                return self._get_safari_tab()
+        except Exception as e:
+            print(f"Error getting browser tab: {e}")
+        
+        return None
+    
+    def _get_chrome_tab(self) -> Optional[Dict[str, Any]]:
+        """Get Chrome active tab info"""
+        script = '''
+        tell application "Google Chrome"
+            if (count of windows) > 0 then
+                set activeWindow to front window
+                set activeTab to active tab of activeWindow
+                set tabTitle to title of activeTab
+                set tabURL to URL of activeTab
+                return tabTitle & "|" & tabURL
+            end if
+        end tell
+        '''
+        
+        result = subprocess.run(['osascript', '-e', script], 
+                              capture_output=True, text=True, timeout=5)
+        
+        if result.returncode == 0 and result.stdout.strip():
+            parts = result.stdout.strip().split('|', 1)
+            return {
+                'title': parts[0] if parts else '',
+                'url': parts[1] if len(parts) > 1 else '',
+                'browser': 'Chrome'
+            }
+        return None
+    
+    def _get_safari_tab(self) -> Optional[Dict[str, Any]]:
+        """Get Safari active tab info"""
+        script = '''
+        tell application "Safari"
+            if (count of windows) > 0 then
+                set activeWindow to front window
+                set activeTab to current tab of activeWindow
+                set tabTitle to name of activeTab
+                set tabURL to URL of activeTab
+                return tabTitle & "|" & tabURL
+            end if
+        end tell
+        '''
+        
+        result = subprocess.run(['osascript', '-e', script], 
+                              capture_output=True, text=True, timeout=5)
+        
+        if result.returncode == 0 and result.stdout.strip():
+            parts = result.stdout.strip().split('|', 1)
+            return {
+                'title': parts[0] if parts else '',
+                'url': parts[1] if len(parts) > 1 else '',
+                'browser': 'Safari'
+            }
+        return None
+    
+    def classify_activity(self, window_info: Dict, tab_info: Optional[Dict] = None) -> str:
+        """Classify current activity based on window/tab content"""
+        
+        text_to_analyze = []
+        if window_info.get('app_name'):
+            text_to_analyze.append(window_info['app_name'].lower())
+        if window_info.get('window_title'):
+            text_to_analyze.append(window_info['window_title'].lower())
+        if tab_info:
+            if tab_info.get('title'):
+                text_to_analyze.append(tab_info['title'].lower())
+            if tab_info.get('url'):
+                text_to_analyze.append(tab_info['url'].lower())
+        
+        combined_text = ' '.join(text_to_analyze)
+        
+        scores = {}
+        for category, keywords in self.productivity_keywords.items():
+            score = sum(1 for keyword in keywords if keyword in combined_text)
+            if score > 0:
+                scores[category] = score
+        
+        if scores:
+            return max(scores, key=scores.get)
+        
+        return 'unknown'
+    
+    def update(self):
+        """Update window tracking with enhanced info"""
+        now = time.time()
+        window_info = self.get_window_info()
+        app_name = window_info['app_name']
+        full_context = window_info['full_context']
+        
+        tab_info = self.get_browser_tab_info(app_name) if app_name else None
+        
+        if full_context and full_context != self.current_window:
+            if self.current_window:
+                duration = now - self.last_check
+                self.window_usage[self.current_window] += duration
+                self.window_switches += 1
+            
+            self.current_window = full_context
+            self.current_app = app_name
+            
+            history_entry = {
+                'timestamp': now,
+                'window': full_context,
+                'app': app_name,
+                'tab_info': tab_info,
+                'activity_type': self.classify_activity(window_info, tab_info)
+            }
+            self.window_history.append(history_entry)
+        
+        self.last_check = now
+        return window_info, tab_info
+    
+    def get_enhanced_metrics(self) -> Dict[str, Any]:
+        """Get detailed window and activity metrics"""
+        now = time.time()
+        
+        if self.current_window:
+            duration = now - self.last_check
+            self.window_usage[self.current_window] += duration
+            self.last_check = now
+        
+        recent_activity = [entry for entry in self.window_history if now - entry['timestamp'] <= 3600]
+        
+        activity_breakdown = defaultdict(float)
+        for entry in recent_activity:
+            activity_type = entry.get('activity_type', 'unknown')
+            activity_breakdown[activity_type] += 2
+        
+        current_info = self.window_history[-1] if self.window_history else {}
+        
+        return {
+            'current_app': self.current_app,
+            'current_window': self.current_window,
+            'current_tab': current_info.get('tab_info'),
+            'current_activity_type': current_info.get('activity_type', 'unknown'),
+            'window_switches_per_hour': len(recent_activity),
+            'activity_breakdown': dict(activity_breakdown),
+            'top_windows': dict(sorted(self.window_usage.items(), key=lambda x: x[1], reverse=True)[:5])
+        }
+
+
+class NotificationManager:
+    """Manages desktop notifications for coaching"""
+    
+    def __init__(self):
+        self.last_notification = 0
+        self.notification_cooldown = 300  # 5 minutes
+        self.user_last_notification = {}
+    
+    def should_notify(self, user_id: str, priority: int = 1) -> bool:
+        """Check if we should send a notification based on cooldown and priority"""
+        now = time.time()
+        
+        # Check global cooldown
+        if now - self.last_notification < self.notification_cooldown:
+            return False
+        
+        # Check per-user cooldown (shorter for high priority)
+        user_cooldown = 180 if priority == 1 else 300  # 3min for urgent, 5min for normal
+        last_user_notification = self.user_last_notification.get(user_id, 0)
+        
+        return now - last_user_notification >= user_cooldown
+    
+    def format_notification(self, strategy: Dict, context: Dict) -> Dict:
+        """Format coaching strategy as notification"""
+        return {
+            'message': strategy['message'],
+            'priority': strategy['priority'],
+            'action': strategy['action'],
+            'suggested_duration': strategy['duration'],
+            'context': {
+                'energy_level': round(context['energy_level'], 2),
+                'stress_level': round(context['stress_level'], 2),
+                'productivity_score': round(context['productivity_score'], 2),
+                'focus_quality': round(context['focus_quality'], 2)
+            },
+            'timestamp': datetime.now().isoformat()
+        }
+    
+    def record_notification(self, user_id: str):
+        """Record that a notification was sent"""
+        now = time.time()
+        self.last_notification = now
+        self.user_last_notification[user_id] = now
+        
+    def send_coaching_notification(self, notification: Dict[str, Any]):
+        """Send desktop notification for coaching"""
+        
+        now = time.time()
+        if now - self.last_notification < self.notification_cooldown:
+            return
+        
+        try:
+            icon_map = {1: "⚠️", 2: "💡", 3: "ℹ️"}
+            priority_icon = icon_map.get(notification.get('priority', 2), "💡")
+            
+            title = f"{priority_icon} AI Coach"
+            message = notification['message']
+            
+            if 'action' in notification:
+                message += f" - {notification['action']}"
+            
+            # Use macOS native notifications
+            script = f'display notification "{message}" with title "{title}"'
+            result = subprocess.run(['osascript', '-e', script], 
+                                  capture_output=True, text=True, timeout=5)
+            
+            if result.returncode == 0:
+                self.last_notification = now
+                # Update user-specific timestamp if user_id provided
+                if hasattr(self, '_current_user_id'):
+                    self.user_last_notification[self._current_user_id] = now
+                print(f"📱 Sent notification: {notification['message']}")
+            else:
+                # Fallback to console
+                print(f"📢 COACHING ALERT: {notification['message']}")
+            
+        except Exception as e:
+            print(f"Error sending notification: {e}")
+            print(f"📢 COACHING ALERT: {notification['message']}")
+
+
+class EnhancedTelemetryCollector:
+    """Complete telemetry collector with real monitoring"""
+    
+    def __init__(self):
+        self.activity_tracker = ActivityTracker()
+        self.window_tracker = WindowTracker()
+        self.notification_manager = NotificationManager()
+        self.start_time = time.time()
+        self.monitoring = False
+        
+        # Listeners
+        self.keyboard_listener = None
+        self.mouse_listener = None
+    
+    def start_monitoring(self):
+        """Start monitoring user activity"""
+        if not PYNPUT_AVAILABLE:
+            print("❌ Cannot start monitoring: pynput not installed")
+            return False
+        
+        try:
+            self.keyboard_listener = KeyboardListener(
+                on_press=self.activity_tracker.on_key_press
+            )
+            self.keyboard_listener.start()
+            
+            self.mouse_listener = MouseListener(
+                on_move=self.activity_tracker.on_mouse_move,
+                on_click=self.activity_tracker.on_mouse_click
+            )
+            self.mouse_listener.start()
+            
+            self.monitoring = True
+            print("✅ Started real telemetry monitoring!")
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error starting monitoring: {e}")
+            return False
+    
+    def stop_monitoring(self):
+        """Stop monitoring"""
+        if self.keyboard_listener:
+            self.keyboard_listener.stop()
+        if self.mouse_listener:
+            self.mouse_listener.stop()
+        
+        self.monitoring = False
+        print("⏹️  Stopped telemetry monitoring")
+    
+    def get_enhanced_telemetry(self) -> Dict[str, Any]:
+        """Get comprehensive telemetry with window/tab tracking"""
+        
+        # Update tracking
+        self.window_tracker.update()
+        
+        # Get metrics
+        activity_metrics = self.activity_tracker.get_activity_metrics()
+        enhanced_metrics = self.window_tracker.get_enhanced_metrics()
+        
+        # Calculate derived metrics
+        now = time.time()
+        session_duration = (now - self.start_time) / 3600
+        
+        focus_quality = self._calculate_focus_quality(activity_metrics, enhanced_metrics)
+        energy_level = self._calculate_energy_level(activity_metrics)
+        stress_level = self._calculate_stress_level(activity_metrics, enhanced_metrics)
+        productivity_score = self._calculate_productivity_score(enhanced_metrics)
+        
+        # Build comprehensive telemetry
+        telemetry = {
+            # Core metrics
+            'keystrokes_per_min': activity_metrics['keystrokes_per_min'],
+            'mouse_events_per_min': activity_metrics['mouse_events_per_min'],
+            'app_switches_per_hour': enhanced_metrics['window_switches_per_hour'],
+            'session_duration_hours': session_duration,
+            'focus_quality': focus_quality,
+            'energy_level': energy_level,
+            'stress_level': stress_level,
+            
+            # Enhanced metrics
+            'current_app': enhanced_metrics['current_app'],
+            'current_window': enhanced_metrics['current_window'],
+            'current_tab': enhanced_metrics['current_tab'],
+            'current_activity_type': enhanced_metrics['current_activity_type'],
+            'productivity_score': productivity_score,
+            'enhanced_focus_quality': focus_quality,
+            'distraction_level': min(1.0, enhanced_metrics['window_switches_per_hour'] / 50),
+            'context_switches': enhanced_metrics['window_switches_per_hour'],
+            'activity_breakdown': enhanced_metrics['activity_breakdown'],
+            
+            # Browser data
+            'browser_tab_title': enhanced_metrics['current_tab'].get('title', '') if enhanced_metrics['current_tab'] else '',
+            'browser_tab_url': enhanced_metrics['current_tab'].get('url', '') if enhanced_metrics['current_tab'] else '',
+            'browser_name': enhanced_metrics['current_tab'].get('browser', '') if enhanced_metrics['current_tab'] else '',
+            
+            # Additional context
+            'typing_speed_wpm': activity_metrics['typing_speed_wpm'],
+            'idle_seconds': activity_metrics['idle_seconds'],
+            'is_active': activity_metrics['is_active'],
+            'last_break_time': self._get_last_break_time(),
+            
+            # Metadata
+            'timestamp': datetime.now().isoformat(),
+            'monitoring_active': self.monitoring,
+            'data_source': 'enhanced_real_telemetry',
+            'enhanced_monitoring': True
+        }
+        
+        return telemetry
+    
+    def _calculate_focus_quality(self, activity: Dict, enhanced: Dict) -> float:
+        switches_factor = max(0, 1 - (enhanced['window_switches_per_hour'] / 30))
+        typing_factor = min(1, activity['typing_speed_wpm'] / 40) if activity['typing_speed_wpm'] > 0 else 0.5
+        activity_factor = 0.8 if activity['is_active'] and activity['keystrokes_per_min'] < 200 else 0.3
+        
+        current_activity = enhanced.get('current_activity_type', 'unknown')
+        activity_bonus = {'productive': 0.2, 'research': 0.1, 'communication': 0.0, 'entertainment': -0.3, 'unknown': 0.0}.get(current_activity, 0.0)
+        
+        focus = (switches_factor * 0.4 + typing_factor * 0.3 + activity_factor * 0.3) + activity_bonus
+        return max(0.0, min(1.0, focus))
+    
+    def _calculate_energy_level(self, activity: Dict) -> float:
+        activity_score = (activity['keystrokes_per_min'] + activity['mouse_events_per_min']) / 100
+        energy = min(1.0, activity_score)
+        
+        if activity['idle_seconds'] > 300:
+            energy *= 0.5
+        elif activity['idle_seconds'] > 60:
+            energy *= 0.8
+        
+        return max(0.1, energy)
+    
+    def _calculate_stress_level(self, activity: Dict, enhanced: Dict) -> float:
+        switch_stress = min(1.0, enhanced['window_switches_per_hour'] / 50)
+        activity_stress = 0.8 if activity['keystrokes_per_min'] > 150 else 0.2
+        session_hours = (time.time() - self.start_time) / 3600
+        time_stress = min(1.0, session_hours / 4) if session_hours > 2 else 0.0
+        
+        stress = (switch_stress * 0.4 + activity_stress * 0.3 + time_stress * 0.3)
+        return max(0.0, min(1.0, stress))
+    
+    def _calculate_productivity_score(self, enhanced: Dict) -> float:
+        breakdown = enhanced.get('activity_breakdown', {})
+        total_time = sum(breakdown.values()) or 1
+        
+        weights = {'productive': 1.0, 'research': 0.8, 'communication': 0.6, 'entertainment': 0.2, 'unknown': 0.5}
+        
+        weighted_score = 0
+        for activity, time_spent in breakdown.items():
+            weight = weights.get(activity, 0.5)
+            weighted_score += (time_spent / total_time) * weight
+        
+        return max(0.0, min(1.0, weighted_score))
+    
+    def _get_last_break_time(self) -> str:
+        now = time.time()
+        activity_metrics = self.activity_tracker.get_activity_metrics()
+        
+        if activity_metrics['idle_seconds'] > 300:
+            break_time = now - activity_metrics['idle_seconds']
+            return datetime.fromtimestamp(break_time).isoformat()
+        
+        return datetime.fromtimestamp(self.start_time).isoformat()
+
+
+class EnhancedPersonalCoach:
+    """Complete AI coach with real monitoring and notifications"""
+    
+    def __init__(self, user_id: str = "personal_user"):
+        self.user_id = user_id
+        self.coach = AICoach()
+        self.collector = EnhancedTelemetryCollector()
+        self.running = False
+        self.coaching_stats = {
+            'total_notifications': 0,
+            'productivity_sessions': 0,
+            'distraction_alerts': 0,
+            'break_reminders': 0
+        }
+    
+    async def start_personal_coaching(self):
+        """Start complete AI coaching with monitoring"""
+        
+        print("🚀 COMPLETE AI COACH - Real Monitoring & Notifications")
+        print("=" * 70)
+        print(f"👤 User: {self.user_id}")
+        print("🎯 Full Monitoring: Tabs, Windows, Activity, Notifications")
+        
+        # Check setup
+        ready, missing = self._check_setup()
+        if not ready:
+            print(f"\n📋 SETUP NEEDED:")
+            for item in missing:
+                print(f"   {item}")
+            return
+        
+        # Start monitoring
+        print("\n📊 Starting complete activity monitoring...")
+        if not self.collector.start_monitoring():
+            print("❌ Failed to start monitoring")
+            return
+        
+        print("✅ Successfully monitoring your complete activity!")
+        print("\n🔍 MONITORING:")
+        print("   📱 Browser tabs & URLs")
+        print("   🖥️  Window titles & focus")
+        print("   ⌨️  Keyboard & mouse activity")
+        print("   🔄 App switching patterns")
+        print("   📊 Productivity scoring")
+        
+        print("\n🔔 NOTIFICATIONS:")
+        print("   Desktop alerts for coaching")
+        print("   Context-aware suggestions")
+        print("   Smart timing (5min cooldown)")
+        
+        print(f"\nPress Ctrl+C to stop coaching\n")
+        
+        self.running = True
+        await self._coaching_loop()
+    
+    def _check_setup(self):
+        """Check if setup is complete"""
+        missing = []
+        
+        if not PYNPUT_AVAILABLE:
+            missing.append("pip install pynput")
+        if not NOTIFICATIONS_AVAILABLE:
+            missing.append("pip install plyer")
+        
+        # Check permissions
+        try:
+            script = 'tell application "System Events" to return name of first application process whose frontmost is true'
+            result = subprocess.run(['osascript', '-e', script], capture_output=True, text=True, timeout=5)
+            if result.returncode != 0:
+                missing.append("Grant accessibility permissions in System Preferences")
+        except Exception:
+            missing.append("Grant accessibility permissions in System Preferences")
+        
+        return len(missing) == 0, missing
+    
+    async def _coaching_loop(self):
+        """Main coaching loop"""
+        
+        try:
+            while self.running:
+                # Get enhanced telemetry
+                telemetry = self.collector.get_enhanced_telemetry()
+                
+                # Get AI coaching
+                notification = await self.coach.analyze_telemetry(telemetry, self.user_id)
+                
+                if notification:
+                    await self._handle_notification(notification, telemetry)
+                else:
+                    self._show_status(telemetry)
+                
+                await asyncio.sleep(90)
+                
+        except KeyboardInterrupt:
+            print("\n⏹️  Coaching stopped by user")
+        finally:
+            await self._stop_coaching()
+    
+    async def _handle_notification(self, notification: Dict, telemetry: Dict):
+        """Handle coaching notification"""
+        
+        self.coaching_stats['total_notifications'] += 1
+        
+        # Send desktop notification
+        self.collector.notification_manager.send_coaching_notification(notification)
+        
+        # Console output
+        print(f"\n🔔 COACHING ALERT #{self.coaching_stats['total_notifications']}")
+        print("=" * 60)
+        print(f"💡 {notification['message']}")
+        print(f"🎯 Action: {notification['action']}")
+        print(f"⚡ Priority: {notification['priority']}")
+        
+        # Show context
+        if telemetry.get('current_tab') and telemetry['current_tab'].get('title'):
+            tab = telemetry['current_tab']
+            title = tab.get('title', 'Unknown')
+            browser = tab.get('browser', 'Browser')
+            print(f"📑 Context: {browser} - {title[:50] + '...' if len(title) > 50 else title}")
+        else:
+            window = telemetry.get('current_window', 'Unknown')
+            print(f"🖥️  Context: {window[:50] + '...' if len(window) > 50 else window}")
+        
+        activity_type = telemetry.get('current_activity_type', 'unknown')
+        activity_icons = {'productive': '💼', 'research': '🔍', 'communication': '💬', 'entertainment': '🎮', 'unknown': '❓'}
+        print(f"{activity_icons.get(activity_type, '❓')} Activity: {activity_type.title()}")
+        
+        print(f"\n📊 Current State:")
+        print(f"   Productivity: {telemetry['productivity_score']:.2f}")
+        print(f"   Focus: {telemetry['focus_quality']:.2f}")
+        print(f"   Window Switches/Hour: {telemetry['context_switches']}")
+        
+        print("=" * 60)
+        
+        # Record feedback
+        effectiveness = 0.8 if telemetry['productivity_score'] < 0.5 else 0.6
+        self.coach.record_feedback(self.user_id, f"alert_{self.coaching_stats['total_notifications']}", {"effectiveness": effectiveness})
+    
+    def _show_status(self, telemetry: Dict):
+        """Show status update"""
+        
+        now = datetime.now().strftime("%H:%M:%S")
+        activity_type = telemetry.get('current_activity_type', 'unknown')
+        activity_icons = {'productive': '💼', 'research': '🔍', 'communication': '💬', 'entertainment': '🎮', 'unknown': '❓'}
+        
+        focus_icon = "🎯" if telemetry['focus_quality'] > 0.7 else "😐" if telemetry['focus_quality'] > 0.4 else "😵"
+        productivity_icon = "📈" if telemetry['productivity_score'] > 0.7 else "📊" if telemetry['productivity_score'] > 0.4 else "📉"
+        
+        status = f"[{now}] {activity_icons.get(activity_type, '❓')} {activity_type.title()} | "
+        status += f"{focus_icon} Focus: {telemetry['focus_quality']:.2f} | "
+        status += f"{productivity_icon} Productivity: {telemetry['productivity_score']:.2f} | "
+        
+        if telemetry.get('current_tab') and telemetry['current_tab'].get('title'):
+            tab_title = telemetry['current_tab']['title']
+            status += f"📑 {tab_title[:25] + '...' if len(tab_title) > 25 else tab_title}"
+        else:
+            app = telemetry.get('current_app', 'Unknown')
+            status += f"🖥️  {app}"
+        
+        print(status)
+    
+    async def _stop_coaching(self):
+        """Stop coaching with summary"""
+        
+        self.running = False
+        self.collector.stop_monitoring()
+        
+        print("\n📊 COACHING SESSION SUMMARY")
+        print("=" * 50)
+        print(f"👤 User: {self.user_id}")
+        print(f"📱 Total Notifications: {self.coaching_stats['total_notifications']}")
+        
+        coach_status = self.coach.get_coach_status()
+        print(f"🧠 Total Interactions: {coach_status['statistics']['total_interactions']}")
+        print(f"📈 Patterns Discovered: {coach_status['statistics']['discovered_patterns']}")
+        
+        print(f"\n✅ Complete monitoring session finished!")
+
+
+def check_permissions():
+    """Check macOS permissions"""
+    try:
+        script = 'tell application "System Events" to return name of first application process whose frontmost is true'
+        result = subprocess.run(['osascript', '-e', script], capture_output=True, text=True, timeout=5)
+        if result.returncode == 0:
+            print("✅ Accessibility permissions OK")
+            return True
+        else:
+            print("⚠️  Need accessibility permissions:")
+            print("   System Preferences > Security & Privacy > Accessibility")
+            print("   Add Terminal/Python to allowed apps")
+            return False
+    except Exception:
+        print("⚠️  Cannot check permissions")
+        return False
+
+
 # Main execution
+async def main():
+    """Main function - choose demo or real monitoring"""
+    
+    print("🤖 AI COACH - Choose Mode")
+    print("=" * 30)
+    print("1. Demo mode (simulated data)")
+    print("2. Real monitoring mode")
+    
+    choice = input("\nEnter choice (1 or 2): ").strip()
+    
+    if choice == "2":
+        # Real monitoring mode
+        try:
+            user_id = input("Enter your name/ID (or press Enter for 'personal_user'): ").strip()
+            if not user_id:
+                user_id = "personal_user"
+        except EOFError:
+            user_id = "personal_user"
+        
+        coach = EnhancedPersonalCoach(user_id)
+        
+        def signal_handler(signum, frame):
+            print("\n🛑 Received interrupt signal...")
+            coach.running = False
+        
+        signal.signal(signal.SIGINT, signal_handler)
+        
+        await coach.start_personal_coaching()
+    else:
+        # Demo mode
+        await demonstrate_ai_capabilities()
+
+
 if __name__ == "__main__":
-    asyncio.run(demonstrate_ai_capabilities())
+    asyncio.run(main())
