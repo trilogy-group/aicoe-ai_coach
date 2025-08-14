@@ -48,6 +48,8 @@ import subprocess
 import time
 import psutil
 import signal
+import os
+import httpx
 from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Any, Tuple
 from pathlib import Path
@@ -75,6 +77,239 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+
+class ClaudeClient:
+    """Robust Anthropic Claude API client with retry logic"""
+    
+    def __init__(self, api_key: str, model: str = "claude-sonnet-4-20250514"):
+        self.api_key = api_key
+        self.model = model
+        self.base_url = "https://api.anthropic.com/v1"
+        self.headers = {
+            "x-api-key": api_key,
+            "Content-Type": "application/json",
+            "anthropic-version": "2023-06-01"
+        }
+        self.max_retries = 3
+        self.retry_delay = 1.0
+        
+    async def analyze_telemetry(self, telemetry_data: Dict, context: str = "") -> Optional[Dict]:
+        """Analyze telemetry data and provide coaching insights"""
+        
+        prompt = f"""You are an AI productivity coach analyzing user telemetry data. 
+
+TELEMETRY DATA:
+{json.dumps(telemetry_data, indent=2)}
+
+CONTEXT: {context}
+
+Analyze this data and provide a coaching recommendation. Focus on:
+1. Productivity patterns and issues
+2. Stress indicators 
+3. Focus quality
+4. Break timing needs
+5. Energy levels
+
+Respond with a JSON object containing:
+{{
+    "nudge_text": "Clear, actionable coaching message",
+    "nudge_type": "break_reminder|focus_boost|stress_reduction|productivity_tip",
+    "confidence": 0.0-1.0,
+    "priority": 1-3,
+    "reasoning": "Brief explanation of the recommendation"
+}}
+
+Only provide a recommendation if there's a clear coaching opportunity. If no intervention is needed, respond with {{"nudge_text": null}}.
+"""
+
+        try:
+            return await self._make_request(prompt)
+        except Exception as e:
+            logger.error(f"Claude telemetry analysis failed: {e}")
+            return None
+    
+    async def _make_request(self, prompt: str, max_tokens: int = 300) -> Optional[Dict]:
+        """Make request to Claude API with retry logic"""
+        
+        request_data = {
+            "model": self.model,
+            "max_tokens": max_tokens,
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ]
+        }
+        
+        for attempt in range(self.max_retries):
+            try:
+                async with httpx.AsyncClient(timeout=30.0) as client:
+                    response = await client.post(
+                        f"{self.base_url}/messages",
+                        headers=self.headers,
+                        json=request_data
+                    )
+                    
+                    if response.status_code == 200:
+                        result = response.json()
+                        content = result.get("content", [{}])[0].get("text", "")
+                        
+                        # Try to parse as JSON if it looks like JSON
+                        if content.strip().startswith('{'):
+                            try:
+                                return json.loads(content)
+                            except json.JSONDecodeError:
+                                pass
+                        
+                        return {"content": content}
+                    
+                    elif response.status_code == 429:  # Rate limit
+                        wait_time = self.retry_delay * (2 ** attempt)
+                        logger.warning(f"Rate limited, waiting {wait_time}s before retry {attempt + 1}")
+                        await asyncio.sleep(wait_time)
+                        continue
+                    
+                    else:
+                        logger.error(f"Claude API error {response.status_code}: {response.text}")
+                        if attempt == self.max_retries - 1:
+                            return None
+                        await asyncio.sleep(self.retry_delay)
+                        
+            except Exception as e:
+                logger.error(f"Claude request attempt {attempt + 1} failed: {e}")
+                if attempt == self.max_retries - 1:
+                    return None
+                await asyncio.sleep(self.retry_delay)
+        
+        return None
+
+
+class MultiProviderLLMClient:
+    """Intelligent multi-provider client with automatic failover"""
+    
+    def __init__(self, providers: Dict[str, Any]):
+        self.providers = providers
+        self.primary_provider = "claude"  # Prefer Claude
+        self.provider_health = {name: True for name in providers.keys()}
+        self.failover_attempts = {}
+        
+    async def analyze_telemetry(self, telemetry_data: Dict, context: str = "") -> Optional[Dict]:
+        """Analyze telemetry with dual AI analysis (Claude + Local ML + Fusion)"""
+        
+        # Get Claude analysis
+        claude_result = None
+        if self.primary_provider in self.providers and self.provider_health.get(self.primary_provider, False):
+            try:
+                claude_result = await self.providers[self.primary_provider].analyze_telemetry(telemetry_data, context)
+                if claude_result:
+                    self.provider_health[self.primary_provider] = True
+                else:
+                    self.provider_health[self.primary_provider] = False
+                    
+            except Exception as e:
+                logger.warning(f"Claude analysis failed: {e}")
+                self.provider_health[self.primary_provider] = False
+        
+        # Get local ML analysis (rule-based fallback)
+        local_result = self._rule_based_analysis(telemetry_data)
+        
+        # If we have both results, use Claude to fuse them
+        if claude_result and local_result and claude_result.get('nudge_text'):
+            try:
+                fusion_result = await self._fuse_analyses(claude_result, local_result, telemetry_data)
+                if fusion_result:
+                    return fusion_result
+            except Exception as e:
+                logger.warning(f"AI fusion failed: {e}")
+        
+        # Return Claude result if available, otherwise local
+        if claude_result and claude_result.get('nudge_text'):
+            return claude_result
+        
+        return local_result
+    
+    async def _fuse_analyses(self, claude_result: Dict, local_result: Dict, telemetry_data: Dict) -> Optional[Dict]:
+        """Use Claude to intelligently combine Claude and local ML results"""
+        
+        if self.primary_provider not in self.providers:
+            return claude_result
+            
+        fusion_prompt = f"""You are an AI coach fusion system. Combine these two coaching analyses into one optimal recommendation:
+
+CLAUDE ANALYSIS:
+{json.dumps(claude_result, indent=2)}
+
+LOCAL ML ANALYSIS:
+{json.dumps(local_result, indent=2)}
+
+TELEMETRY CONTEXT:
+{json.dumps(telemetry_data, indent=2)}
+
+Create a fused recommendation that:
+1. Takes the best insights from both analyses
+2. Resolves any conflicts intelligently
+3. Provides a more nuanced, comprehensive coaching message
+4. Maintains the JSON structure with enhanced reasoning
+
+Respond with JSON:
+{{
+    "nudge_text": "Enhanced coaching message combining both analyses",
+    "nudge_type": "break_reminder|focus_boost|stress_reduction|productivity_tip|ai_fusion",
+    "confidence": 0.0-1.0,
+    "priority": 1-3,
+    "reasoning": "Explanation of how you combined the analyses",
+    "source": "ai_fusion",
+    "claude_insight": "Key insight from Claude",
+    "local_insight": "Key insight from local ML"
+}}
+"""
+        
+        try:
+            fusion_result = await self.providers[self.primary_provider]._make_request(fusion_prompt)
+            if fusion_result and fusion_result.get('nudge_text'):
+                return fusion_result
+        except Exception as e:
+            logger.error(f"Fusion analysis failed: {e}")
+        
+        return None
+    
+    def _rule_based_analysis(self, telemetry_data: Dict) -> Optional[Dict]:
+        """Fallback rule-based analysis when AI is unavailable"""
+        energy = telemetry_data.get('energy_level', 0.5)
+        stress = telemetry_data.get('stress_level', 0.5)
+        focus = telemetry_data.get('focus_quality', 0.5)
+        break_needed = telemetry_data.get('break_needed', 0.5)
+        
+        if break_needed > 0.7:
+            return {
+                "nudge_text": "Time for a break! You've been working hard.",
+                "nudge_type": "break_reminder",
+                "confidence": 0.8,
+                "priority": 2,
+                "reasoning": "Break urgency detected"
+            }
+        
+        if stress > 0.7 and energy < 0.3:
+            return {
+                "nudge_text": "Take 5 deep breaths. Your body needs a moment to reset.",
+                "nudge_type": "stress_reduction", 
+                "confidence": 0.7,
+                "priority": 1,
+                "reasoning": "High stress, low energy detected"
+            }
+        
+        if focus < 0.3:
+            return {
+                "nudge_text": "Too many distractions. Focus on one task for the next 25 minutes.",
+                "nudge_type": "focus_boost",
+                "confidence": 0.6,
+                "priority": 2,
+                "reasoning": "Low focus quality"
+            }
+        
+        return None
 
 
 class SimpleClassifier:
@@ -755,10 +990,11 @@ class AICoach:
     
     This is the main interface that combines all AI components:
     - Context analysis and understanding
-    - Machine learning pattern recognition
+    - Machine learning pattern recognition  
     - Predictive analytics and burnout prevention
     - Individual user modeling and personalization
     - Continuous learning from feedback
+    - Real Claude AI integration with fallback
     """
     
     def __init__(self, model_path: Optional[str] = None):
@@ -773,11 +1009,38 @@ class AICoach:
         self.predictive_engine = PredictiveEngine()
         self.global_interaction_history = []
         
+        # Initialize AI providers
+        self.ai_client = self._initialize_ai_providers()
+        
         # Model persistence
         self.model_path = model_path or "ai_coach_model.pkl"
         self._load_model()
         
-        logger.info("AI Coach v4.0 initialized with full AI capabilities")
+        ai_status = "with Claude AI" if self.ai_client else "with rule-based fallback"
+        logger.info(f"AI Coach v4.0 initialized {ai_status}")
+    
+    def _initialize_ai_providers(self) -> Optional[MultiProviderLLMClient]:
+        """Initialize AI providers with API keys from environment"""
+        try:
+            providers = {}
+            
+            # Try to initialize Claude
+            anthropic_key = os.getenv('ANTHROPIC_API_KEY')
+            if anthropic_key:
+                claude_client = ClaudeClient(anthropic_key)
+                providers["claude"] = claude_client
+                logger.info("✅ Claude AI client initialized")
+            else:
+                logger.warning("⚠️ ANTHROPIC_API_KEY not found - AI features will use rule-based fallback")
+            
+            if providers:
+                return MultiProviderLLMClient(providers)
+            else:
+                return None
+                
+        except Exception as e:
+            logger.error(f"Failed to initialize AI providers: {e}")
+            return None
     
     def _get_user_model(self, user_id: str) -> UserModel:
         """Get or create user model"""
@@ -824,8 +1087,38 @@ class AICoach:
                     # Low predicted effectiveness - try different approach
                     context['force_alternative'] = True
             
-            # Get base strategy recommendation
-            base_strategy = self.coaching_strategy.select_strategy(context)
+            # Run dual analysis: AI + Local ML in parallel
+            ai_recommendation = None
+            if self.ai_client:
+                try:
+                    # This now does: Claude analysis + Local ML + AI fusion
+                    ai_recommendation = await self.ai_client.analyze_telemetry(telemetry, f"User: {user_id}")
+                    if ai_recommendation and ai_recommendation.get('nudge_text'):
+                        # Convert AI recommendation to coaching format
+                        base_strategy = {
+                            'message': ai_recommendation['nudge_text'],
+                            'action': ai_recommendation.get('nudge_type', 'ai_coaching'),
+                            'priority': ai_recommendation.get('priority', 2),
+                            'duration': 10,  # Default duration
+                            'confidence': ai_recommendation.get('confidence', 0.8),
+                            'source': ai_recommendation.get('source', 'ai_analysis')
+                        }
+                        
+                        # Log the analysis type
+                        if ai_recommendation.get('source') == 'ai_fusion':
+                            logger.info(f"🔀 Using AI fusion: Claude + Local ML combined")
+                        else:
+                            logger.info(f"🤖 Using AI analysis: {ai_recommendation['nudge_type']}")
+                    else:
+                        ai_recommendation = None
+                except Exception as e:
+                    logger.warning(f"AI analysis failed, falling back to rule-based: {e}")
+                    ai_recommendation = None
+            
+            # Fallback to pure rule-based strategy if AI completely unavailable
+            if not ai_recommendation:
+                base_strategy = self.coaching_strategy.select_strategy(context)
+                logger.info("📊 Using rule-based strategy only")
             
             if base_strategy:
                 # Apply personalization
@@ -833,8 +1126,8 @@ class AICoach:
                 personalization_score = user_model.get_personalized_recommendation(action)
                 
                 # Adjust strategy based on personal effectiveness
-                if personalization_score < 0.3:
-                    # This strategy hasn't worked well for this user
+                if personalization_score < 0.3 and not ai_recommendation:
+                    # This strategy hasn't worked well for this user (but keep AI recommendations)
                     base_strategy = self._get_alternative_strategy(context, exclude=action)
                 
                 if base_strategy and self.notification_manager.should_notify(user_id, base_strategy['priority']):
@@ -891,11 +1184,21 @@ class AICoach:
         
         # Add AI insights
         base_notification['ai_insights'] = {
+            'ai_powered': self.ai_client is not None,
+            'analysis_type': strategy.get('source', 'rule_based'),
             'personalization_score': user_model.get_personalized_recommendation(strategy['action']),
             'predicted_effectiveness': self.pattern_learner.predict_effectiveness(context) if self.pattern_learner.is_trained else None,
             'next_state_prediction': user_model.predict_next_state(context),
             'discovered_patterns': self.pattern_learner.discovered_patterns[:3] if self.pattern_learner.discovered_patterns else []
         }
+        
+        # Add fusion-specific insights if available
+        if hasattr(strategy, 'get') and strategy.get('source') == 'ai_fusion':
+            base_notification['fusion_details'] = {
+                'claude_insight': strategy.get('claude_insight', ''),
+                'local_insight': strategy.get('local_insight', ''),
+                'fusion_reasoning': strategy.get('reasoning', '')
+            }
         
         return base_notification
     
@@ -964,8 +1267,9 @@ class AICoach:
     def get_coach_status(self) -> Dict:
         """Get comprehensive coach status and AI statistics"""
         return {
-            'version': '4.0 (Ultimate AI)',
+            'version': '4.0 (Ultimate AI with Claude)',
             'ai_features': {
+                'claude_ai': self.ai_client is not None,
                 'machine_learning': self.pattern_learner.is_trained,
                 'user_modeling': len(self.user_models) > 0,
                 'predictive_analytics': len(self.predictive_engine.time_series_data) > 0,
